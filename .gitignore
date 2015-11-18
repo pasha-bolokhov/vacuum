@@ -1,0 +1,11 @@
+#
+/*.pdf
+vacuum.ps
+vacuum-en.ps
+*.aux
+*.dvi
+*.log
+*.toc
+texput.log
+*.bak
+*~
