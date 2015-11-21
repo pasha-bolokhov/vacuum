@@ -134,38 +134,46 @@ $ \HH_{0} $,
 	(\vec{A}\times\vec{B})_{l} = \epsilon_{ljk} A_{j} B_{k} ,
 \end{equation*}
 	and we always assume summation in the repeated indices.
-    
 
-\section{Конечномерные примеры с сингулярным взаимодействием}
-    В этой части мы опишем конечномерные примеры из квантовой механики,
-    с тем, чтобы далее попытаться обобщить некоторые их свойста на
-    бесконечномерный случай.
-    Пусть
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                              %
+%                                                                              %
+%             F I N I T E - D I M E N S I O N A L   E X A M P L E S            %
+%                                                                              %
+%                                                                              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Finite-dimensional examples with\\
+         singular interactions}
+	In this part we describe finite-dimensional examples from quantum mechanics
+	in order to make an attempt to generalize some of their properties
+	to the infinite-dimensional case.
+	Let
 \begin{equation*}
     H_{\ve} = \Delta + \ve \delta(x)
 	= -\frac{\partial^{2}}{\partial x_{k}^{2}}
 	    + \ve \delta(x)
 \end{equation*}
-    --- оператор Гамильтона частицы в двух- или трех-мерном пространстве,
-    которая взаимодействует с
-$ \delta $-потенциалом, сосредоточенным в начале координат.
-    Гамильтониан
+	be the Hamiltonian of a particle existing in the two- or three-dimensional space
+	and interacting with a
+$ \delta $-potential which is concentrated at the origin.
+	Hamiltonian
 $ H_{\ve} $
-    не допускает корректного определения в виде замкнутого оператора
-    в Гильбертовом пространстве.
-    Однако, можно рассмотреть действие
+	does not have a correct definition in terms of a closed operator
+	in the Hilbert space.
+	One can, however, consider the action of
 $ H_{\ve} $
-    на множестве
-    гладких функций, убывающих в начале координат вместе
-    с производными.
-    Такому действию соответствует симметрический оператор
+	on the set of smooth functions decreasing towards the origin along with their derivatives.
+	This action corresponds to a symmetric operator
 \begin{equation*}
     H: \;\; H f(\vec{x}) = \Delta f(\vec{x}) =
 	-\frac{\partial^{2}}{\partial x_{k}^{2}} f(\vec{x}) ,
 \end{equation*}
-    который, очевидно, не учитывает наличие потенциала
+	which, evidently, does not account for potential
 $ \ve \delta(\vec{x}) $.
-    В сферических координатах в двумерном
+	In terms of the spherical coordinates in two-dimensional
 \begin{equation*}
     \vec{x} = \vec{x}(r,\varphi)
     = \begin{pmatrix} r\cos\varphi\\
@@ -175,7 +183,7 @@ $ \ve \delta(\vec{x}) $.
 	0 \leq r,\\ 0 \leq\varphi < 2\pi
     \end{array}
 \end{equation*}
-    или трехмерном пространстве
+	or three-dimensional space
 \begin{equation}
 \label{sphchange}
     \vec{x} = \vec{x}(r,\theta,\varphi)
@@ -189,14 +197,15 @@ $ \ve \delta(\vec{x}) $.
 	0 \leq\varphi < 2\pi
     \end{array}
 \end{equation}
-    действие оператора
+	the action of operator
 $ H_{0} $
-    выглядит следующим образом. Если скалярная функция
+	has the following form.
+	If a scalar function
 $ f(\vec{x}) $
-    представляется в виде суммы сферических гармоник
-$ e^{il\varphi} $ или
+	is represented in terms of a sum of spherical harmonics
+$ e^{il\varphi} $ or
 $ \YY_{lm}(\theta,\varphi) $
-    с коэффициентами, зависящими от радиальной переменной
+	with coefficients depending on the radial variable,
 \begin{gather*}
     f_{2}(\vec{x}) = f_{2}(\vec{x}(r,\varphi)) = \sum_{0\leq l}
     \frac{1}{\sqrt{r}} u_{l}(r)
@@ -205,9 +214,9 @@ $ \YY_{lm}(\theta,\varphi) $
     \frac{1}{r} u_{lm}(r)
         \YY_{lm}(\theta,\varphi) , 
 \end{gather*}
-    то соответствующая операция
+	then the corresponding operation
 $ \Delta $
-    применяется к ней следующим образом
+	acts as follows
 \begin{gather*}
     \Delta f_{2}(\vec{x})
         = \sum_{0\leq l} \frac{1}{\sqrt{r}}T_{l-\frac{1}{2}} u_{l}(r)
@@ -216,7 +225,7 @@ $ \Delta $
         = \sum_{0\leq |m| \leq l} \frac{1}{r}T_{l} u_{lm}(r)
 	\YY_{lm}(\theta,\varphi) ,
 \end{gather*}
-    где
+	where
 \begin{gather}
 \label{Tl}
     T_{l} = -\frac{d^{2}}{dr^{2}} + \frac{l(l+1)}{r^{2}} ,\\
@@ -224,16 +233,16 @@ $ \Delta $
     T_{l}^{-1}(r,s) = \frac{1}{2l+1}\bigl(\frac{s^{l+1}}{r^{l}} \theta(r-s)
 	+ \frac{r^{l+1}}{s^{l}}\theta(s-r)\bigr).
 \end{gather}
-    При этом скалярное произведение
+	Note that because of orthonormality of the sets of spherical
+	harmonics, the scalar product
 \begin{equation*}
     (f,g)_{\RR^{2}} = \int_{\RR^{2}} \ol{f(\vec{x})} g(\vec{x}) \,d^{2}x ,
 \quad
     (f,g)_{\RR^{3}} = \int_{\RR^{3}} \ol{f(\vec{x})} g(\vec{x}) \,d^{3}x ,
 \end{equation*}
-    ввиду ортонормированности наборов сферических гармоник,
-    переносится на коэффициентные функции
+	descends to the coefficient functions
 $ u(r) $
-    как скалярное произведение на полуоси
+	as a scalar product on the semi-axis
 \begin{equation}
 \label{plainprod}
     (u,v) = \int_{0}^{\infty} \ol{u(r)} v(r) \, dr .
