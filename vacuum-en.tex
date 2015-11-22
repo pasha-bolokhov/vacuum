@@ -97,7 +97,7 @@ T.~A.~Bolokhov
 	on an extension parameter and for that reason do not possess scale invariance.
 
 	Due to the lack of adequate means of defining a scalar product on the space of functionals
-	which describe the states of the stationary picture of the quantum field theory
+	which describe states of the stationary picture of the quantum field theory
 	we shall not make strict statements about the self-adjointness of operators.
 	Instead, we shall provide a sketch of the vacuum state and its excitations for such operators (the Fock space
 \cite{Fock}).
@@ -247,26 +247,24 @@ $ u(r) $
 \label{plainprod}
     (u,v) = \int_{0}^{\infty} \ol{u(r)} v(r) \, dr .
 \end{equation}
-    Операторы
-$ T_{l-\frac{1}{2}} $ и
-$ T_{l} $,
-    определенные
-    на множестве гладких функций,
-    исчезающих в нуле вместе с производными,
-    самосопряжены в существенном в скалярном произведении
+	Operators
+$ T_{l-\frac{1}{2}} $ and
+$ T_{l} $
+	defined on the set of smooth functions vanishing at the origin
+	along with their derivatives,
+	are essentially self-adjoint ?({\it with respect to})? scalar product
 (\ref{plainprod})
-    при
+	at
 $ l \geq 1 $.
-    В то же время, операторы
+	At the same time, operators
 $ T_{-\frac{1}{2}} $,
 $ T_{0} $
-    на таком множестве являются симметрическими операторами с индексами
-    дефекта
+	acting on the latter set are symmetric operators with the deficiency indices
 $ (1,1) $.
-    Их самосопряженные расширения
+	Their self-adjoint extensions
 $ T_{-\frac{1}{2}}^{\kappa} $,
 $ T_{0}^{\kappa} $
-    имеют собственные функции непрерывного спектра вида
+	have continuous spectrum eigenfunctions that look like
 \begin{gather*}
     u_{2\lambda}(r) = \sqrt{\lambda r} (\alpha_{2\lambda} J_{0}(\lambda r)
 	+ \beta_{2\lambda} Y_{0}(\lambda r)) , \\
@@ -275,107 +273,118 @@ $ T_{0}^{\kappa} $
     \alpha_{n\lambda} = \alpha_{n}(\lambda,\kappa), \quad
     \beta_{n\lambda} = \beta_{n}(\lambda,\kappa),
 \end{gather*}
-    плюс, возможно, собственные функции дискретного спектра.
-    При этом действие расширений
+	along with, possibly, some eigenfunctions of the discrete spectrum.
+	The actions of extensions
 $ T_{-\frac{1}{2}}^{\kappa} $,
 $ T_{0}^{\kappa} $
-    совпадает с соответствующей дифференциальной операцией
-$ T_{-\frac{1}{2}} $ или
-$ T_{0} $.
+	match the differential operations
+$ T_{-\frac{1}{2}} $ and
+$ T_{0} $, correspondingly.
 
-    Таким образом, переходя обратно к декартовым координатам,
-    симметрические операторы
+	Returning to Cartesian coordinates, therefore, symmetric operators
 $ H $
-    могут быть расширены до самосопряженных операторов
+	can be extended to self-adjoint operators
 $ H_{2}^{\kappa} $, 
-$ H_{3}^{\kappa} $, определенных
-    на множестве функций, удовлетворяющих асимптотическому условию
-    в начале координат
+$ H_{3}^{\kappa} $
+	defined on the set of functions satisfying the asymptotic conditions
 \begin{equation}
 \label{fas2}
     \lim_{r\to 0} \frac{f(\vec{x}(r))}{\ln r} = \kappa \lim_{r\to 0}\bigl(
 	f(\vec{x}(r)) -\lim_{r'\to 0} \frac{f(\vec{x}(r'))}{\ln r'} \ln r
     \bigr) ,
 \end{equation}
-    или
+	or
 \begin{equation}
 \label{fas3}
     \lim_{r\to 0} rf(\vec{x}(r)) = -\kappa \lim_{r\to 0}(
 	1 + r \frac{\partial}{\partial r} ) f(\vec{x}(r)) ,
 \end{equation}
-    (см. (3.43), (3.44) в
+	at the origin
+    (see Eqs. (3.43), (3.44) in
 \cite{Jackiw}).
-    Действие 
+	Action of 
 $ H_{2}^{\kappa} $,
 $ H_{3}^{\kappa} $,
-    по-прежнему совпадает с суммой квадратов вторых производных
-$ \Delta $ в соответствующем пространстве
-$ \RR^{2} $ или
+	still matches the sum of squares of the second derivatives
+$ \Delta $ in the corresponding space
+$ \RR^{2} $ or
 $ \RR^{3} $.
 
-    Расширения
+	Extensions
 $ H_{2}^{\kappa} $,
 $ H_{3}^{\kappa} $
-    зависят от параметра
+	depend on parameter
 $ \kappa $,
-    размерность которого обуславливается наличием размерности у оператора
+	the dimension of which originates from the presence of dimensionality of operator
 $ H $:
 $ [H] = [x]^{-2} $.
-    С физической точки зрения можно сказать, что
+	From physical perspective one can say that
 $ H_{2}^{\kappa} $,
 $ H_{3}^{\kappa} $
-    является результатом перенормировки соответствующих операторов
+	appear as a result of renormalization of the respective operators
 $ H_{\ve} $
-    при
+	at
 $ \ve \to 0 $.
-    А наличие сингулярных функций с асимптотикой
+	As for the presence of singular functions with asymptotics
 (\ref{fas2}),
 (\ref{fas3})
-    в начале координат в области определения является следом от
-    перенормированного сингулярного взаимодействия
+	at the origin in the domain, it can be traced to the
+	renormalized singular interaction
 $ \ve \delta(\vec{x}) $.
-    В случае частицы в двумерном пространстве имеет место явление
-    размерной трансмутации --- безразмерный параметр
+	In the case of a particle in two-dimensional space one
+	has the phenomenon of dimensional transmutation ---
+	a dimensionless parameter
 $ \ve $
-    при перенормировке заменяется на размерный параметр
+	is replaced with a dimensional parameter
 $ \kappa $
+	during renormalization.
 \cite{LFres}.
 
-    В качестве другого примера можно рассмотреть операторы вида
+
+	As another example one can consider operators of the type
 \begin{equation}
 \label{secondex}
     \Delta + \frac{\ve}{|x|^{2}} =
 	-\frac{\partial^{2}}{\partial x_{k}^{2}} + \frac{\ve}{|x|^{2}},
 \end{equation}
-    где
-$ \ve $ --- это безразмерный параметр.
-    Такие операторы являются замкнутыми симметрическими операторами
-    при конечных
+	with
+$ \ve $ a dimensionless parameter.
+	Such operators are closed symmetric operators at finite
 $ \ve $
-    в некоторой окрестности нуля (при этом
-$ \ve $ должен быть положителен в двумерном случае).
-    При попытке построить функцию, удовлетворяющим уравнениям на собственное
-    значение, видно, что увеличение расходимости ``собственной'' функции на
+	in some vicinity of zero (in two-dimensional case
+$ \ve $ has to be positive).
+	When building a function satisfying the equations for eigenvalues
+	one observes that the increase of the divergence of the ``eigenfunction'' by
 $ |x|^{-2} $
-    от действия потенциала сокращается с расходимостью от действия
-    Лапласиана.
-    И, таким образом, оператор
+	originating from the action of the potential cancels the
+	divergence from the action of the Laplacian.
+	Therefore, operator
 (\ref{secondex})
-    имеет альтернативный базис локально квадратично интегрируемых
-    ``собственных функций'', ведущих себя как
+	has an alternative basis of locally square-integrable
+	``eigenfunctions'' behaving as
 $ |x|^{-\eta} $
-    в начале координат
-($ \eta = \sqrt{\ve} $ в двумерном случае и 
-$ \eta = \frac{1}{2}(1+\sqrt{1+4\ve}) $ в трехмерном),
-    то есть самосопряженные расширения
-    (это очень математически нестрогое объяснение).
-    Можно увидеть, что эти расширения в пределе
+	near the origin
+($ \eta = \sqrt{\ve} $ in two dimensions and
+$ \eta = \frac{1}{2}(1+\sqrt{1+4\ve}) $ in three dimensions),
+	that is, it allows self-adjoint extensions
+	(this is not a mathematically strict explanation).
+	One can show that in the limit
 $ \ve \to 0 $
-    непрерывно переходят в соответствующие операторы
-$ H_{2}^{\kappa} $ или
+	these extensions continuously turn into the corresponding operators
+$ H_{2}^{\kappa} $ and
 $ H_{3}^{\kappa} $.
 
-\section{Трехмерная поперечная теория поля}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                                        %
+%                                                                                        %
+%    T H R E E - D I M E N S I O N A L   T R A N S V E R S E   F I E L D   T H E O R Y   %
+%                                                                                        %
+%                                                                                        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Three-dimensional transverse field theory}
     С точки зрения теории операторов в гильбертовом пространстве, пример
     предыдущей части показывает,
     что сужение области определения оператора
