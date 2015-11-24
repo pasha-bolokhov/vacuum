@@ -438,67 +438,68 @@ $ P_{kj}^{\ve} $ --- the projector from the transverse
 \end{equation*}
     and as
 $ \ve $ --- a small dimensionless parameter of the theory.
-    Поля
+	Fields
 $ A_{k}^{a}(x) $,
 $ E_{k}^{a}(x) $
-    имеют также индекс внутренней симметрии
-$ a $,
-    по которому везде подразумевается суммирование. Действие ковариантной
-    производной (и всех объектов, которые ее включают)
-    может быть нетривиальными по этому индексу
+	also have an internal symmetry index
+$ a $
+	which is everywhere assumed to be summed upon.
+	The action of the covariant derivative (and of all objects that contain it)
+	may be non-trivial in this index
 \begin{equation*}
     (\pl_{k}-A_{k})^{ab} = \pl_{k} \delta^{ab} - A_{k}^{c} t^{abc} .
 \end{equation*}
-    Далее мы будем рассматривать только квадратичные
-    слагаемые, в которых нетривиальность действия по этому индексу
-    низводится до суммирования. При условии ортогональности матриц
+	We shall be only considering the quadratic terms, for which the non-triviality
+	of action in this index reduces to mere summation.
+	Provided that the matrices 
 $ t^{abc} $
-    при разных
+	are orthogonal for different
 $ c $,
-    компоненты, соответствующие разным значениям верхнего индекса у поля
-$ A_{k}^{a}(x) $,
-    разделяются.
+	the components corresponding to different values of the upper index of field
+$ A_{k}^{a}(x) $
+	separate.
 
-    Реальный физический пример гамильтониана типа
+	An actual physical example of a Hamiltonian of type
 (\ref{qH3})
-    приведен в третьей главе книги
+	is given in the third chapter of book
 \cite{FS}.
-    В самом деле, в формуле
+	Indeed, in Eq.
 (2.5)
-    приводится следующая плотность гамильтониана
+	therein the following Hamiltonian density is presented,
 \begin{equation}
 \label{hFS}
     h = \frac{1}{2} (E_{k}^{a})^{2} + \frac{1}{4}
 	(\partial_{k}A_{j}^{a} - \partial_{j}A_{k}^{a}
 	    - \ve [A_{j},A_{k}]^{a})^{2} ,
 \end{equation}
-    где
-$ \vec{A}(\vec{x}) $ --- поперечное поле, а на сопряженный импульс
+	where
+$ \vec{A}(\vec{x}) $ is the transverse field, and
+	the conjugate momentum
 $ E_{k}^{a} $
-    наложено условие связи (2.41)
+	is placed a constraint (2.41) upon,
 \begin{equation}
 \label{conn}
     (\partial_{k} - \ve A_{k}) E_{k} = 0 .
 \end{equation}
-    После разделения импульса
+	After splitting momentum
 $ \vec{E}^{a}(\vec{x}) $
-    на продольную и поперечную компоненты
+	into its longitudinal and transverse components
 \begin{equation*}
     E_{k} = E_{k}^{L} + E_{k}^{T} ,\quad \partial_{k} E_{k}^{T} = 0,
 \end{equation*}
-    из условия
+	we obtain from condition
 (\ref{conn})
-    получаем, что
+	that
 \begin{gather*}
     E_{k}^{L} = - \partial_{k} M^{-1} (\partial_{l} -\ve A_{l}) E_{l}^{T},
     \quad M = (\partial_{j} - \ve A_{j})\partial_{j} , \\
     E_{k} = \bigl(\delta_{kl}
 	- \partial_{k} M^{-1} (\partial_{l} -\ve A_{l})\bigr) E_{l}^{T},
 \end{gather*}
-    и плотность гамильтониана
-(\ref{hFS}),
-    с учетом интегрирования по частям, преобразуется к виду
-(\ref{qH3})
+	and the Hamiltonian density
+(\ref{hFS})
+	after integrating by parts is transformed to the form of 
+Eq.~(\ref{qH3})
 \begin{align*}
     h =& \,\frac{1}{2} \bigl( (\delta_{kl}
 	- \partial_{k} M^{-1} (\partial_{l} -\ve A_{l}) ) E_{l}^{T} \bigr)^{2}
