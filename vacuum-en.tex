@@ -508,59 +508,62 @@ Eq.~(\ref{qH3})
 	+\frac{1}{2} \ve^{2} ([A_{j},A_{k}]^{a})^{2} .
 \end{align*}
 
-    При проведении перенормировки
+	During the renormalization procedure
 $ \ve \to 0 $
-    в гамильтониане
-(\ref{qH3})
-    слагаемые старших порядков
+	and the higher order terms
 $ \ve (A^{3}+\ldots) $
-    пропадают, а проектор
+	in Hamiltonian
+(\ref{qH3})
+	disappear, while projector
 $ P_{kj}^{\ve} $
-    переходит в ортогональный проектор на поперечную составляющую
+	turns into the orthogonal projector onto the transverse component
 \begin{equation}
 \label{Plim}
     P_{kj}^{\ve} \stackrel{\ve\to 0}{\rightarrow}
 	P_{kj} = \delta_{kj} - \pl_{k} \pl^{-2} \pl_{j} ,\quad
     P_{kj}^{T} = P_{kj} ,\quad P_{kn} P_{nj} = P_{kj} .
 \end{equation}
-    Однако замена
-$ P_{kj}^{\ve} $ на $ P_{kj} $
-    в перенормированном квантовом гамильтониане не проходит бесследно.
-    Классический гамильтониан
+	However, replacement of
+$ P_{kj}^{\ve} $ with $ P_{kj} $
+	in the renormalized quantum Hamiltonian does not occur without leaving a trace.
+        Classical Hamiltonian
 (\ref{qH3})
-    через проектор
+	seems to have singularities via projector
 $ P_{kj}^{\ve} $
-    по-видимому имеет особенности когда
+	when 
 $ A_{k}(x) $
-    ведет себя локально как
+	locally behaves as
 $ |x|^{-1} $.
-    Такую же особенность имеют и однородные слагаемые старших порядков.
-    По аналогии с примером
+	Higher order homogeneous terms have the same singularity.
+	In analogy to example
 (\ref{secondex}),
-    эти два типа особенностей могут сокращаться и, тем самым, давать
-    для перенормированного квантового гамильтониана область
-    определения с новыми граничными условиями и, соответственно, с другими
-    спектральными свойствами.
+	these two types of singularities can cancel each other,
+	and in this way supply the renormalized quantum Hamiltonian
+	with a domain having new boundary conditions and, correspondingly,
+	different spectral properties.
 
-    Для того, чтобы это увидеть, рассмотрим действие квантового оператора
-    Гамильтона, который получается из классической функции
+	In order to see this better, let us consider the action
+	of the quantum Hamiltonian operator --- which can be obtained from
+	the classical function
 (\ref{qH3})
-    при
-$ \ve = 0 $,
-    на функциналы
-$ \Phi(A) $
+	by taking
+$ \ve = 0 $ ---
+	upon functionals
+$ \Phi(A) $,
 \begin{equation}
 \label{qH0}
     \HH_{0}\Phi(A) = - \int_{\RR^{3}} \frac{\delta}{\delta A_{k}(x)}
 	P_{kj} \frac{\delta}{\delta A_{j}(x)} d^{3}x \,\Phi(A)
-	+ Q(A) \Phi(A) ,
+	+ Q(A) \Phi(A) .
 \end{equation}
-    здесь
-$ P_{kj} $ ---
-    это проектор
-(\ref{Plim}) на поперечное подпространство, а
-$ Q(A) $ -- это квадратичная форма оператора Лапласа
-$ \Delta $
+	Here
+$ P_{kj} $
+	is the projector
+(\ref{Plim})
+	onto the transverse subspace, and
+$ Q(A) $
+	is the quadratic form of the Laplace operator
+$ \Delta $,
 \begin{align}
 \nonumber
     Q(A) = \int_{\RR^{3}} (\pl_{k}A_{j}(x))^{2} d^{3}x
@@ -570,10 +573,10 @@ $ \Delta $
 	&= \int_{\RR^{3}} A_{j}(x) \Delta A_{j}(x) d^{3}x .
 \end{align}
 
-    Вакуумное состояние и
-$ n $-частичные возбуждения оператора
+	The vacuum state and
+$ n $-particle excitations of operator
 $ \HH_{0} $
-    далее строятся на основе гауссова функционала
+	can then be built from the Gaussian functional
 \begin{gather}
 \label{Phi0}
     \Phi_{0}(A) = \exp\{-\frac{1}{2}(A,P\Delta^{\frac{1}{2}}PA)\} ,\\
@@ -583,38 +586,46 @@ $ \HH_{0} $
 	b_{j_{1}}(\vec{x}_{1}) \ldots b_{j_{n}}(\vec{x_{n}})
     d^{3}x_{1} \ldots d^{3}x_{n} \Phi_{0}(A) ,
 \end{gather}
-    где
-$ \sigma_{n} $ -- симметричные функции, а
+	where
+$ \sigma_{n} $ are some symmetric functions, and
 \begin{equation*}
     b_{j}(\vec{x}) = P_{jk}\bigl(\frac{\delta}{\delta A_{k}(\vec{x})}
 	- \Delta^{\frac{1}{2}}_{k}\vec{A}(\vec{x})\bigr) ,\quad
     a_{j}(\vec{x}) = P_{jk}\bigl(\frac{\delta}{\delta A_{k}(\vec{x})}
 	+ \Delta^{\frac{1}{2}}_{k}\vec{A}(\vec{x})\bigr) ,
 \end{equation*}
-    -- соответствующие операторы рождения и уничтожения.
-    При этом существенную роль играет тот факт, что проектор
+    	the corresponding creation and annihilation operators.
+	Here quite essential is the fact that projector
 $ P $
-    коммутирует с оператором
+	commutes with operator
 $ \Delta $,
-    а значит и с любой его функцией, например, с 
+	and hence, with an arbitrary function thereof ---
+	for example with 
 $ \Delta^{\frac{1}{2}} $.
 
-    Действие оператора
+	Operator
 $ \HH_{0} $
-    на функционалы
+	acts on functionals
 $ \Phi_{\sigma_{n}} $
-    недиагонально, однако, как несложно увидеть, оно оставляет инвариантными
-$ n $-частичные подпространства.
-    Для дальнейшей диагонализации необходимо перейти к спектральному
-    представлению оператора
+	non-diagonally, however, as is easy to see,
+	it leaves
+$ n $-particle subspaces invariant.
+	For further diagonalization it is necessary to pass
+	to the spectral representation of operator
 $ \Delta $,
-    что мы сделаем позже в рамках обобщенного подхода.
-    Основная его идея заключается в построении альтернативной
-    иерархии ``собственных'' состояний с помощью метода, который, по аналогии
-    с методом вторичного квантования, может быть назван методом вторичных
-    самосопряженных расширений.
+	which we shall do later in the framework of a more general approach.
+	The main idea of that approach is
+	to build an alternative hierarchy of ``eigenstates'' via a method
+	which, in analogy to the second quantization, can be called
+	the method of secondary self-adjoint extensions.
 
-\subsection{Метод вторичных самосопряженных расширений}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                                        %
+%  M E T H O D   O F   S E C O N D A R Y   S E L F - A D J O I N T   E X T E N S I O N S %
+%                                                                                        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Method of secondary self-adjoint extensions}
     В случае, когда квантовый гамильтониан имеет вид
 (\ref{qH0}),
     а замкнутая квадратичная форма
