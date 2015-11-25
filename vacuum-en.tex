@@ -626,68 +626,68 @@ $ \Delta $,
 %                                                                                        %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Method of secondary self-adjoint extensions}
-    В случае, когда квантовый гамильтониан имеет вид
-(\ref{qH0}),
-    а замкнутая квадратичная форма
+	In the case when the quantum Hamiltonian has the form of 
+Eq.~(\ref{qH0}),
+	and the closed quadratic form
 $ Q(A) $
-    имеет нетривиальные расширения, возникает естественный способ
-    построения альтернативного набор ``собственных'' состояний оператора
-$ \HH_{0} $.
-    Замкнутая полуограниченная квадратичная форма
+	{\it admits?} non-trivial extensions,
+	a natural way of constructing an alternative set of "eigenstates"
+	of operator
+$ \HH_{0} $ arises.
+	A closed semi-bounded quadratic form
 $ Q(A) $
-    может быть задана с помощью замкнутого симметрического или самосопряженного
-    оператора
+	may be defined by means of a symmetric or self-adjoint operator
 $ S $
-    с помощью естественной формулы
+	via a natural formula
 \begin{equation*}
     Q(A) = (A,SA) .
 \end{equation*}
-    При этом область определения 
+	Herein domain
 $ \DD_{S} $
-    оператора
+	of operator
 $ S $
-    содержится в области определения 
+	is contained in domain
 $ \DD_{Q} $
-    формы
+	of form
 $ Q $,
-    а последняя, вообще говоря, существенно отличаться от
-$ \DD_{S} $.
-    Симметрический оператор
+	and the latter, generally, differs from the former quite significantly.
+	Symmetric operator
 $ S $
-    имеет самосопряженные расширения
-$ S_{\kappa} $,
-    одно из которых, расширение по Фридрихсу
-\cite{FStone},
-    также задает форму
+	allows self-adjoint extensions
+$ S_{\kappa} $
+	one of which -- an extension {\it in line with} (or {\it \`a la}, or {\it due to}) Friedrichs
+\cite{FStone} ---
+	also defines form
 $ Q $,
-    а остальные, по крайней мере при конечных индексах дефекта
-$ S $,
-    задают другие квадратичные формы
-$ Q_{\kappa} $
-(общие сведения о квадратичных формах см. в разделе VIII.6 книги
+	while the rest of the extensions
+	define different quadratic forms
+$ Q_{\kappa} $, at least at finite deficiency indices of 
+$ S $
+(for general material on quadratic forms see section VIII.6 of book
 \cite{RS1}).
-    Эти квадратичные формы в некоторых случаях (в большинстве простых примеров)
-    являются расширениями исходной формы
+	These quadratic forms in certain cases (in fact, in the majority of simple examples)
+	are extensions of the original form
 \begin{equation*}
     Q \subset Q_{\kappa} ,
 \end{equation*}
-    то есть область определения
+	that is, the domain of 
 $ Q $
-    содержится в замыкании области определения
+	is contained in the closure of the domain of 
 $ Q_{\kappa} $
 \begin{equation*}
     \DD_{Q} \subset \ol{\DD}_{Q_{\kappa}} ,
 \end{equation*}
-    и для всех векторов
-$ A $ из
+	and for all vectors
+$ A $ from
 $ \DD_{Q} $
-    выполняется равентсво
+	the equality
 \begin{equation*}
-    Q(A) = Q_{\kappa}(A) ,\quad A\in \DD_{Q}.
+    Q(A) = Q_{\kappa}(A) ,\quad A\in \DD_{Q} ,
 \end{equation*}
-    В частности, в работе
+	is obeyed.
+	In particular, 
 \cite{Inv}
-    приведены сферически симметричные расширения квадратичной формы
+	shows spherically symmetric extensions of quadratic form
 (\ref{QA})
 \begin{equation}
 \label{QkA}
@@ -697,51 +697,53 @@ $ \DD_{Q} $
     (\frac{5}{3r}+ \frac{44}{27}\kappa) \int_{\partial B_{r}}
         |\vec{A}(\vec{x})|^{2} d^{2} s \Bigr) ,
 \end{equation}
-    для поперечных векторов
+	for transverse vectors
 $ \vec{A}(\vec{x}) $
-    в скалярном произведении
+	({\it? with respect to?}) in the scalar product
 \begin{equation*}
     (\vec{A},\vec{B})_{\RR^{3}} = \int_{\RR^{3}}
 	\ol{A_{j}(\vec{x})} B_{j}(\vec{x}) \,d^{3}x .
 \end{equation*}
-    Здесь
-$ B_{r} $ -- это шар радиуса
+	By
+$ B_{r} $ we have denoted a ball of radius
 $ r $
-    с центром в какой-либо выделенной точке.
-    Для всех векторных полей, регулярных в этой точке (далее это будет
-    начало координат), значение
-    формы
-$ Q_{\kappa} $,
-    очевидно, совпадает со значением формы
+	centered at any preferred point.
+	For all vector fields that are regular at that point (which we shall
+	further take to be the origin) the value of form
+$ Q_{\kappa} $
+	obviously equals the value of the form
 (\ref{QA})
 \begin{equation*}
         Q(A) = \int_{\RR^{3}}
         \bigl(\frac{\partial A_{k}}{\partial x_{j}}\bigr)^{2} d^{3} x .
 \end{equation*}
-    Но в область определения формы
+	But the domain of form
 $ Q_{\kappa} $
-    также попадают поля с сингулярностями вида
+	also includes fields with singularities of type
 (\ref{Asing})
-    у трех поперечных компонет со значением момента вращения
+	in their three transverse components
+	of angular momentum
 $ l=1 $.
-    Это происходит потому, что для таких полей сингулярности порядка
+	The reason for this is that for such fields
+	the singularities of the order
 $ r^{-1} $
-    объемного интеграла в
+	in the volume integral in
 (\ref{QkA})
-    сокращаются с сингулярностями от интеграла по сфере.
-    При этом область определения всех нетривиальных расширений
+	get canceled by the singularities of the integral over the sphere.
+	Notably, the domains of all non-trivial extensions
 $ Q_{\kappa} $
-    одинакова и не зависит от
+	coincide and do not depend on
 $ \kappa $.
-    Также отметим, что в формуле
-(\ref{QkA})
-    коэффициент при размерном параметре
+	We should also add that the coefficient of the dimensional parameter
 $ \kappa $
-    может быть произвольным, значение
+	in equation
+(\ref{QkA})
+	can be taken arbitrary,
+	the value
 $ \frac{44}{27} $
-    выбрано для согласования с граничными условиями
+	has been chosen to conform to boundary conditions
 (\ref{cTb}),
-    которые будут введены позже.
+	which are introduced later.
 
     Далее заметим, что мы можем требовать выполнения основных соотношений
     для ``собственных'' функционалов
