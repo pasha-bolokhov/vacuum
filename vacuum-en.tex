@@ -1285,54 +1285,54 @@ $ p_{1,\lambda}^{\kappa} $
 \subsection{Hamiltonian eigenstates at
 $ l=1 $}
 \emph{\small В заголовках формулы надо выделять $\backslash$boldmath, а иначе они получаются тоньше чем текст!!!}
-    Полученное в предыдущей части
-    спектральное разложение позволяет теперь записать гауссов функционал
+	The spectral expansion that we have obtained in the previous subsection
+	now allows us to re-write the Gaussian functional
 $ \phi_{0}^{\kappa}(u) $
-    для расширенного квантового оператора
+	for the extended quantum operator
 \begin{equation*}
     \HH_{1m}^{\kappa} = -\iint_{0}^{\infty} dr ds
     \frac{\delta}{\delta u(s)} T_{1}^{-1}(s,r)
 	\frac{\delta}{\delta u(r)}
 	+ \langle u, \check{T}_{\kappa}u\rangle_{1}
 \end{equation*}
-    как экспоненту от интегрального оператора
+	as an exponent of an integral operator
 \begin{equation*}
     \phi_{0}^{\kappa}(u)
 	= \exp\{-\frac{1}{2} \iint Q_{\kappa}^{\frac{1}{2}}(r,s)
 	T_{r}u(r) T_{s}u(s) \, dr\,ds\} ,
 \end{equation*}
-    где
+	where
 \begin{equation*}
     Q_{\kappa}^{\frac{1}{2}}(r,s) = \int p_{\lambda}(r) p_{\lambda}(s)
 	\lambda\,d\lambda - i\kappa q(r)q(s) \bigr|_{\kappa <0} .
 \end{equation*}
-    В этом выражении мы специально вынесли дифференциальные операции
+	In this expression we have purposedly pulled out differential operations
 $ T_{r} $, 
 $ T_{s} $
-    для того, чтобы получить более гладкое ядро
+	in order to obtain a more smooth kernel
 $ Q_{\kappa}^{\frac{1}{2}} $.
-    Несложно увидеть, что функционал
+	It is not difficult to see that functional
 $ \phi_{0}^{\kappa} $
-    удовлетворяет уравнению
+	satisfies the equation
 \begin{equation*}
     \HH_{1m}^{\kappa} \phi_{0}^{\kappa}(u)
 	= \Lambda_{0}^{\kappa} \phi_{0}^{\kappa}(u) ,\quad
     \Lambda_{0}^{\kappa} = \int_{0}^{\infty} T_{r}
 	Q_{\kappa}^{\frac{1}{2}}(r,r') |_{r=r'} dr
 \end{equation*}
-    с некоторым бесконечным собственным значением
+	with some infinite eigenvalue
 $ \Lambda_{0}^{\kappa} $.
-    Операторы рождения и уничтожения с помощью ядра
+	The creation and annihilation operators can be
+	written in the following form using kernel
 $ Q_{\kappa}^{\frac{1}{2}} $
-    записываются в виде
 \begin{align*}
     b(r) &= \int_{0}^{\infty} \bigl( Q_{\kappa}^{\frac{1}{2}}(r,s)T_{s}u(s)
 	- T_{1}^{-1}(r,s) \frac{\delta}{\delta u(r)} \bigr) ds , \\
     a(r) &= \frac{\delta}{\delta u(r)} + \int_{0}^{\infty} 
 	T_{r} Q_{\kappa}^{\frac{1}{2}}(r,s) T_{s} u(s) ,
 \end{align*}
-    а инвариантные
-$ n $-частичные состояния строятся с помощью формул, аналогичных
+	while the invariant
+$ n $-particle states can be built with the help of the formulas analogous to
 (\ref{Phin})
 \begin{equation*}
     \phi_{\sigma_{n}}(u) = \iint
@@ -1340,38 +1340,37 @@ $ n $-частичные состояния строятся с помощью �
 	b(r_{1}) \ldots b(r_{n})
     dr_{1} \ldots dr_{n} \, \phi_{0}(u) .
 \end{equation*}
-    Для диагонализации оператора
+	In order to diagonalize operator
 $ \HH_{1m}^{\kappa} $
-    перейдем к спектральному представлению квадратичной формы, то есть сделаем
-    замену
+	let us pass to the spectral representation of the quadratic form,
+	{\it i.e.} perform the substitution
 \begin{equation*}
     \hat{u}(\lambda) = \int_{0}^{\infty} p_{\lambda}(r) T u(r)\,dr, \quad
 	\hat{u}_{d} =  \int_{0}^{\infty} q(r) T u(r) \bigr|_{\kappa<0}
 \end{equation*}
-    (заметим, что все функции здесь вещественные), тогда
+	(note that all functions here are real), then
 \begin{equation*}
     \HH_{1m}^{\kappa} = \int \bigl(
 -\frac{\delta}{\delta \hat{u}(\lambda)} \frac{\delta}{\delta \hat{u}(\lambda)}
 	+ \lambda^{2} \hat{u}^{2}(\lambda) \bigr)d\lambda
 	- \kappa^{2} \hat{u}_{d}^{2} \bigr|_{\kappa <0} .
 \end{equation*}
-    Такому квантовому гамильтониану соответствуют операторы рождения
-    и уничтожения
+	This quantum Hamiltonian is associated to the following
+	creation and annihilation operators
 \begin{equation*}
     \hat{b}(\lambda) = \lambda \hat{u}(\lambda)
 	- \frac{\delta}{\delta \hat{u}(\lambda)} ,\quad
     \hat{a}(\lambda) = \lambda \hat{u}(\lambda) 
 	+ \frac{\delta}{\delta \hat{u}(\lambda)}
 \end{equation*}
-    и вакуумное состояние
+	and to a vacuum state
 \begin{equation*}
     \hat{\phi}_{0}(\hat{u}) = \phi_{0}(u(\hat{u})) = \exp\{-\frac{1}{2}
 	\int_{0}^{\infty} \hat{u}^{2}(\lambda) \lambda \,d\lambda
 	+\frac{i\kappa}{2} \hat{u}_{d}^{2} \bigr|_{\kappa < 0}\} .
 \end{equation*}
-    Собственные 
-$ n $-частичные
-    состояния строятся как интегралы c коэффициентами Бозе-Эйнштейна
+$ n $-particle eigenstates are constructed as intergrals with Bose-Einstein
+	coefficients
 $ \sigma(\lambda_{1},\ldots \sigma_{\lambda_{n}}) $
 \begin{equation}
 \label{hatphi}
@@ -1380,9 +1379,11 @@ $ \sigma(\lambda_{1},\ldots \sigma_{\lambda_{n}}) $
 	\hat{b}(\lambda_{1}) \ldots \hat{b}(\lambda_{n}) \,
     d\lambda_{1} \ldots d\lambda_{n} \hat{\phi}_{0}(\hat{u}) ,
 \end{equation}
-    и, кроме того, при
+	and, furthermore, for
 $ \kappa < 0 $
-    есть еще состояния, связанные с возбуждениями точечного спектра.
+	there are states related to the excitations of the discrete spectrum.
+
+
 
 \subsection{Собственные состояния квантового гамильтониана свободного
 поперечного поля}
