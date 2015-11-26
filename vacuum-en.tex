@@ -1130,148 +1130,148 @@ $ \HH_{lm} $ instead.
 %                                                                              %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Extensions of quadratic form of operator $ \check{T}_{1} $}
-    В работе
+	It was shown in
 \cite{Inv}
-    показывается, что операторы
+	that operators
 $ \check{T}_{1} $
-    в склярном произведении
+	in scalar product
 $ \langle \cdot , \cdot \rangle_{1} $
-    являются симметрическими операторами с индексами дефекта
+	are symmetric operators with deficiency indices of
 $ (1,1) $.
-    Такие операторы имеют нетривиальные самосопряженные расширения,
-    которые действуют как смешанные выражения
+	Such operatos have non-trivial self-adjoint extensions
+	that act as mixed expressions
 \begin{equation*}
     \check{T}_{\kappa} u = T u - \frac{2}{r} u'(0)
     = -\frac{d^{2}u}{dr^{2}} + \frac{2}{r^{2}} u -\frac{2}{r}u'(0) .
+    \qquad\text{!!!! точка лишняя}
 \end{equation*}
-    на областях определения
+	on the domains
 \begin{equation}
 \label{cTb}
     \DD^{\kappa} = \{u(r): \quad \langle u,u\rangle_{1} < \infty, \;
 	\langle \check{T}_{\kappa} u, \check{T}_{\kappa} u\rangle_{1} <\infty,
 	\; 3u''(0) = 4u'(0) \} .
 \end{equation}
-    Для упрощения обозначений в этой и в следующей части
-    мы будем опускать индекс
+	For brevity we will omit index
 $ l=1 $
-    у оператора
+	of operator
 $ \check{T}_{1\kappa} $
-    и дифференциальной операции
-$ T_{1} $.
-    Операторы
+	and differential operation
+$ T_{1} $
+	both here and in the following section.
+	Operators
 $ \check{T}_{\kappa} $
-    имеют однократный непрерывный спектр, занимающий нетрицательную полуось,
-    которому соответствуют ``собственные'' функции (ядро спектрального
-    преобразования)
+	have a simple continuous spectrum which occupies the non-negative half-axis,
+	and to which the following ``eigenfunctions'' (the kernel{\it\small s??} of the spectral transformation)
+	correspond
 \begin{equation*}
 \label{Tpl}
     p_{\lambda}(r) = p_{1,\lambda}^{\kappa}(r)
         = \frac{2r}{\sqrt{2\pi}\lambda^{2}} \frac{d}{dr}\frac{1}{r}
     (\cos(\zeta +\lambda r) - \cos\zeta) ,
 \end{equation*}
-    где
+	where
 \begin{equation*}
     e^{2i\zeta} = \frac{\lambda - i\kappa}{\lambda + i\kappa}.
 \end{equation*}
-    При
+	At
 $ \kappa < 0 $
-    оператор
+	operator
 $ \check{T}_{\kappa} $
-    имеет однократное собственное значение
+	has a simple eigenvalue
 $ -\kappa $
-    (дискретный спектр) и собственную функцию
+	(the discrete spectrum) and an eigenfunction
 \begin{equation*}
     q(r) = q_{\kappa}(r)
     = \sqrt{-\frac{2}{\kappa^{3}}}
         \bigl(\kappa e^{\kappa r} + \frac{1-e^{\kappa r}}{r}\bigr) .
 \end{equation*}
-    Для набора
+	The set
 $ \{p_{\lambda}, q \} $
-    выполнены условия ортогональности
+	enjoys the conditions of orthogonality
 \begin{equation*}
     \langle p_{\lambda} , p_{\mu} \rangle_{1} = \delta(\lambda-\mu) ,
     \quad \langle p_{\lambda} , q \rangle_{1} = 0 ,
     \quad \langle q , q \rangle_{1} = 1
 \end{equation*}
-    и полноты
+	and completeness,
 \begin{equation*}
     \int_{0}^{\infty} p_{\lambda}(r) T_{s} p_{\lambda}(s) \,d\lambda
         + q(r) T_{s} q(s)\bigr|_{\kappa < 0} = \delta(r-s) ,
 \end{equation*}
-    здесь индекс
+	where index
 $ s $
-    у дифференциальной операции
+	of differential operation
 $ T_{s} $
-    подчеркивает, что она действует на переменную
+	emphasizes that the latter acts with respect to variable
 $ s $.
-    Операторы
+	Operators
 $ \check{T}_{\kappa} $
-    порождают расширения
+	generate extensions
 $ \langle u, \check{T}_{\kappa} u\rangle_{1} $
-    квадратичных форм из потенциальной части гамильтонианов
+	of the quadratic forms from the potential parts of Hamiltonians
 (\ref{Hlm}).
-    Исходная форма
+	The original form
 $ \langle u, \check{T} u\rangle_{1} $
-    задается на множестве два раза дифференцируемых функций, исчезающих
-    в нуле вместе с первой производной
+	is defined on the set of doubly differentiable functions
+	vanishing at the origin along with their first derivative
 \begin{equation*}
     \WW^{2}_{0} = \{u(r):\quad \langle u,u\rangle_{1} <\infty, \;
 	\langle u, \check{T}u\rangle_{1} < \infty, \; u(0)=u'(0) =0 \} ,
 \end{equation*}
-    которое соответствует один раз дифференцируемым полям
+	which corresponds to singly differentiable fields
 \begin{equation}
 \label{Atrns}
     \vec{A}(\vec{x}) =
         \sqrt{2}
 	    \frac{u_{1m}(r)}{r^{2}} \vec{\Upsilon}_{1m}(\theta,\varphi) +
-        \frac{u_{1m}'(r)}{r} \vec{\Psi}_{1m}(\theta,\varphi) ,
+        \frac{u_{1m}'(r)}{r} \vec{\Psi}_{1m}(\theta,\varphi)
 \end{equation}
-    регулярным в начале координат.
-    Расширенные формы
+	regular at the origin.
+	The extended forms
 $ \langle u, \check{T}_{\kappa} u\rangle_{1} $
-    определены на множестве функций с произвольным ограниченным значением
-    производной в нуле
+	are defined on a set of functions with an arbitrary bounded value
+	of the derivative at the origin
 \begin{equation*}
     \WW^{2}_{1} = \{u(r):\quad \langle u,u\rangle_{1} <\infty, \;
 	\langle u, \check{T}_{\kappa}u\rangle_{1} < \infty, \; u(0)=0 \} .
 \end{equation*}
-    Очевидно, что на множестве
+	Obviously the following equality is obeyed on set
 $ \WW^{2}_{0} $
-    выполняется равество
 \begin{equation*}
     \langle u, \check{T}_{\kappa} u\rangle_{1}= \langle u,
 	\check{T} u\rangle_{1} ,\quad u \in \WW^{2}_{0} .
 \end{equation*}
-    Мы не будем приводить симметричное предельное выражение для расширенных
-    форм, и сразу запишем спектральное разложение
+	We shall not provide a symmetric {\it limiting?} expression for the extended
+	form, as we pass right on to the spectral expansion instead,
 \begin{equation*}
     \langle u, \check{T}_{\kappa} u\rangle_{1}
     = \iint_{0}^{\infty} Q_{\kappa}(r,s) T_{r}u(r) T_{s}u(s) \,dr\,ds ,
 \end{equation*}
-    где
+	with
 \begin{equation*}
     Q_{\kappa}(r,s) = \int_{0}^{\infty} p_{\lambda}(r)
     	_{\lambda}(s) \lambda^{2} \,d\lambda
         - \kappa^{2} T_{r} q(r) T_{s} q(s) \bigr|_{\kappa <0} ,
 \end{equation*}
-    а второе слагаемое присутствует только при
+	wherein the second term exists only for
 $ \kappa < 0 $.
 
-    В заключении части стоит отметить, что форма
+	To conclude this subsection we note that form
 $ \langle u, \check{T} u\rangle_{1} $
-    является частным случаем формы
-$ \langle u, \check{T}_{\kappa} u\rangle_{1} $,
-    который соответствует значению
+	is in fact a special case of form
+$ \langle u, \check{T}_{\kappa} u\rangle_{1} $
+	corresponding to
 $ \kappa = \infty $.
-    С точки зрения спектральных свойств этих форм, можно увидеть, что
-    сферическая функция Бесселя
+	From the perspective of the spectral properties of these forms,
+	one can observe that the spherical Bessel function
 \begin{equation*}
     p_{1,\lambda}(r) = \frac{2r}{\sqrt{2\pi}\lambda^{2}}
 	\frac{d}{dr}\frac{1}{r} \sin \lambda r ,
 \end{equation*}
-    которая входит в параметризацию несингулярного поперечного поля
+	appearing in the parametrization of the non-singular transverse field
 (\ref{Atrns}),
-    является предельным случаем функции
+	is a limiting case of function
 $ p_{1,\lambda}^{\kappa} $
 \begin{equation*}
     p_{1,\lambda}(r)  
@@ -1280,8 +1280,11 @@ $ p_{1,\lambda}^{\kappa} $
     (\cos(\zeta +\lambda r) - \cos\zeta) ,\quad \zeta\to -\frac{\pi}{2}.
 \end{equation*}
 
-\subsection{Собственные состояния гамильтониана при 
+
+
+\subsection{Hamiltonian eigenstates at
 $ l=1 $}
+\emph{\small В заголовках формулы надо выделять $\backslash$boldmath, а иначе они получаются тоньше чем текст!!!}
     Полученное в предыдущей части
     спектральное разложение позволяет теперь записать гауссов функционал
 $ \phi_{0}^{\kappa}(u) $
