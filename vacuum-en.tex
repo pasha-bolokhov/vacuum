@@ -799,7 +799,7 @@ $ l=1 $
 	    of variables}
 	Using  scalar spherical functions
 $ \YY_{lm}(\theta,\varphi) $
-	let us introduce three vector spherical harmonics ?VSH?
+	let us introduce three vector spherical harmonics (VSH)
 \cite{VSH}:
 \begin{align}
 \label{VSH1}
@@ -830,10 +830,10 @@ $ \tilde{l} = \sqrt{l(l+1)} $.
     \int_{\Sph^{2}} \overline{\vec{\Phi}_{lm}(\Omega)}
         \vec{\Phi}_{l'm'}(\Omega) d\Omega = \delta_{ll'} \delta_{mm'} .
 \end{align*}
-    Векторные сферические гармоники позволяют написать однозначное
-    представление векторной функции
+	The vector spherical harmonics enable one to uniquely represent
+	a vector function
 $ \vec{A}(\vec{x}) $
-    в виде трех сумм
+	in terms of the three sums
 \begin{equation}
 \label{fext}
     \vec{A}(\vec{x}) =
@@ -841,30 +841,30 @@ $ \vec{A}(\vec{x}) $
         \sum_{l,m} \psi_{lm}(r) \vec{\Psi}_{lm} +
         \sum_{l,m} w_{lm}(r) \vec{\Phi}_{lm} .
 \end{equation}
-    Для сокращения обозначений далее мы будем подразумевать что суммирование
-    по индексам
+	For brevity we will from now on assume that summation in indices
 $ l,m $
-    ведется в пределах
+	is always taken in the range
 $ 1 \leq l $, 
-$ |m| \leq l $,
-    если не указаны другие условия.
-    Для каждой компоненты разложения
-(\ref{fext})
-    при действии оператора
-$ \Delta $
-    имеет место разделение переменных
+$ |m| \leq l $
+	unless states otherwise explicitly.
+	For each component of expansion
+(\ref{fext}),
+	when acted upon with operator
+$ \Delta $,
+	the following separation of variable takes place
 \begin{equation*}
     \Delta \bigl(z(r) \vec{Z}_{lm}\bigr) =
 -\frac{1}{r^{2}} \frac{\pl}{\plr} r^{2} \frac{\pl}{\plr} z(r) \vec{Z}_{lm}
         + \frac{z(r)}{r^{2}} \Dtph \vec{Z}_{lm}, \quad
             \vec{Z} = \vec{\Upsilon}, \vec{\Psi}, \vec{\Phi} .
 \end{equation*}
-    Действие сферического лапласиана
+	The action of the spherical Laplacian
 $ \Dtph $
-    на VSH недиагонально (при
-$ l \geq 1 $), но при нормировке
+	on the VSH is non-diagonal (for
+$ l \geq 1 $)
+	but with normalization
 (\ref{VSH1})--(\ref{VSH3})
-    оказывается симметричным:
+	it turns out to be symmetric,
 \begin{align*}
     \Dtph \vec{\Upsilon}_{lm} &= (2+\tilde{l}^{2}) \vec{\Upsilon}_{lm}
             - 2 \tilde{l} \vec{\Psi}_{lm} ,\\
@@ -873,15 +873,15 @@ $ l \geq 1 $), но при нормировке
             + \tilde{l}^{2} \vec{\Psi}_{lm} ,\\
     \Dtph \vec{\Phi}_{lm} &= \tilde{l}^{2} \vec{\Phi}_{lm} .
 \end{align*}
-    Если на векторную функцию
-$ \vec{A}(\vec{x}) $
-    наложить условия поперечности
-(\ref{transAE}),
-    то она будет параметризоваться уже не тремя, как
-(\ref{fext}),
-    а двумя наборами функций
+	If one imposes the condition of transversality
+(\ref{transAE})
+	upon a vector function
+$ \vec{A}(\vec{x}) $,
+	then it will be parametrized by just two sets of functions
 $ u_{lm}(r) $,
-$ w_{lm}(r) $:
+$ w_{lm}(r) $
+	instead of three as in 
+(\ref{fext}),
 \begin{equation}
 \label{Atrexp}
     \vec{A}(\vec{x}) =
@@ -890,8 +890,8 @@ $ w_{lm}(r) $:
         \frac{u_{lm}'}{r} \vec{\Psi}_{lm} 
     +   \frac{w_{lm}}{r} \vec{\Phi}_{lm} \bigr) .
 \end{equation}
-    Первые два слагаемые под знаком суммы по отдельности не поперечны, однако,
-    при объединении они становятся таковыми:
+	The first two terms in the bracket are not transverse by themselves,
+	but they become so when taken together,
 \begin{align}
 \label{treq}
     \vec{\pl} &\cdot
@@ -904,26 +904,26 @@ $ w_{lm}(r) $:
     + \frac{u_{lm}}{r^{2}} \vec{\pl}\cdot \frac{\vec{x}}{r} \bigr) 
     + \tilde{l}^{-1} u'_{lm} \vec{\pl}\cdot\vec{\pl} \YY_{lm} = 0 .
 \end{align}
-    Здесь мы пока предполагаем, что функции
+	For now we are assuming that functions
 $ u_{lm}(r) $,
 $ w_{lm}(r) $
-    достаточно гладкие и быстро убывают в начале координат.
+	are smooth enough and fall off rapidly towards the origin.
 
-    Действие квадратичной формы оператора Лапласа на поперечное поле
+	The action of the quadratic form of Laplace operator on a transverse field
 $ \vec{A}(\vec{x}) $
-    в терминах новых переменных
+	written in terms of new variables
 $ u_{lm}(r) $,
 $ w_{lm}(r) $
-    выглядит следующим образом (см. формулы в
-\cite{Lapl}):
+	takes the following form (see the corresponding equations in
+\cite{Lapl})
 \begin{equation*}
     \int_{\RR^{3}}\vec{A}(\vec{x})\cdot \Delta \vec{A}(\vec{x}) d^{3}x
 	= \sum_{l,m}\langle u_{lm},\check{T}_{l}u_{lm}\rangle_{l}
 	    + \sum_{l,m}(w_{lm},\check{T}_{l}w_{lm}) ,
 \end{equation*}
-    где
+	where
 $ \langle \cdot , \cdot \rangle_{l} $
-    -- это скалярное произведение, перенесенное из пространства
+	is the scalar product inherited from 
 $ \RR^{3} $
 \begin{equation}
 \label{angleprod}
@@ -931,20 +931,20 @@ $ \RR^{3} $
 	\ol{u'(r)}v'(r) + \frac{l(l+1)}{r^{2}} \ol{u(r)}v(r)\bigr) dr ,
     \quad u(0) = v(0) = 0,
 \end{equation}
-    а радиальная часть оператора Лапласа
+	while the radial part of the Laplace operator
 $ \check{T}_{l} $
-    и скаларное произведение
+	and the scalar product
 $ (\cdot,\cdot) $
-    были определены в
-(\ref{Tl}) и
+	have been defined in
+(\ref{Tl}) and
 (\ref{plainprod}).
-    Удивительный факт, существенно облегчающий вычисления, состоит в том,
-    что произведение
+	A surprising fact, significantly reducing calculations, is that
+	for smooth functions vanishing at the origin,
+	product
 (\ref{angleprod})
-    для гладких функций, убывающих в нуле может быть задано как
-    полуторалинейная форма операции
+	can be defined as a sesquilinear form of operation
 $ T_{l} $
-    в скалярном произведении
+	in scalar product
 $ (\cdot,\cdot) $
 \begin{equation}
 \label{Tprod}
@@ -952,15 +952,16 @@ $ (\cdot,\cdot) $
 	-\frac{d^{2}}{dr^{2}}v(r) + \frac{l(l+1)}{r^{2}}v(r) \bigr) dr
 	= (u, T_{l}v).
 \end{equation}
-    Для того, чтобы не путать дифференциальную операцию
-$ T_{l} $,
-    идущую от скалярного произведения, и радиальную часть оператора
-    Лапласа, здесь и далее мы будем обозначать последнюю как
-$ \check{T}_{l} $.
+	In order to avoid confusion between the differential operation
+$ T_{l} $
+	arising from the scalar product and the radial part of Laplace operator,
+	we will denote the latter as
+$ \check{T}_{l} $
+	from here on.
 
-    Кинетическое слагаемое в гамильтониане
+	The kinetic term of Hamiltonian
 (\ref{qH0})
-    можно переписать в следующем виде
+	can be re-written as follows,
 \begin{multline}
 \label{qHkin}
     - \iint_{\RR^{3}} \frac{\delta}{\delta A_{k}(\vec{x})}
@@ -977,7 +978,7 @@ $ \check{T}_{l} $.
 +\frac{\delta u_{lm}(r)}{\delta A_{j}(\vec{y})} \frac{\delta}{\delta u_{lm}(r)}
     \Bigr) dr\, dr'\, d^{3}x\, d^{3}y .
 \end{multline}
-    Для того, чтобы проектор
+	In order for projector
 $ P_{kj}(\vec{x},\vec{y}) $
 \begin{align*}
     P(\vec{x},\vec{y}) =& \sum_{l,m}
@@ -989,11 +990,10 @@ $ P_{kj}(\vec{x},\vec{y}) $
 	\ol{\vec{\Phi}_{lm}(\Omega')} r^{-1} ,
     \quad \vec{x} = (s,\Omega) , \quad \vec{y} = (r, \Omega')
 \end{align*}
-    действовал на поперечные функции
-    как единичный оператор, выберем следующую параметризацию
-    новых переменных
+	to act as a unit operator on transverse functions,
+	let us accept the following parametrization for new variables
 $ (u_{lm}, w_{lm}) $
-    через
+	in terms of 
 $ \vec{A} $:
 \begin{align}
 \label{dphiA}
@@ -1013,28 +1013,28 @@ $ \vec{A} $:
 +\frac{1}{s}(\frac{\pl}{\pl s}T_{l}^{-1}(r,s))\ol{\vec{\Psi}_{lm}(\Omega)}
 	\bigr) \cdot \vec{A}(\vec{x}) ,
 \end{align}
-    где опять
+	where again
 $ \vec{x} = \vec{x}(s,\Omega) $.
-    Несложно увидеть, что эти выражения восстанавливают поля
+	It is not difficult to see that these expressions restore fields
 $ u_{lm}(r) $,
-$ w_{lm}(r) $ из
-$ \vec{A}(\vec{x}) $,
-    представленного в виде
+$ w_{lm}(r) $ from
+$ \vec{A}(\vec{x}) $
+	expressed as 
 (\ref{Atrexp}),
-    и, в то же время, они обнуляются на любой продольной составляющей
+	while, at the same time, they get annihilated on any longitudinal component
 \begin{equation*}
     \vec{A}^{L}(\vec{x}) = \sum_{0\leq |m| \leq l} \bigl(
 	v'_{lm}(r)\vec{\Upsilon}_{lm}(\Omega) +\frac{\tilde{l}}{r}v_{lm}(r)
 	    \vec{\Psi}_{lm}(\Omega)\bigr) .
 \end{equation*}
-    Далее подставим вариации
+	Let us calculate the variations
 $ \frac{\delta w_{lm}}{\delta A} $,
 $ \frac{\delta u_{lm}}{\delta A} $,
-    вычисленные из
+	from
 (\ref{dphiA}),
-(\ref{duA}), в
-(\ref{qHkin})
-    и получим
+(\ref{duA}) and substitute them into
+(\ref{qHkin}).
+	We find,
 \begin{align*}
     -\int& dr\, dr'\, d^{3}x \Bigl(\frac{\delta}{\delta w_{l'm'}(r')}
 \vec{\Phi}_{l'm'}(\Omega) \frac{\delta(r'-s)}{r'} \cdot
@@ -1056,30 +1056,31 @@ $ \frac{\delta u_{lm}}{\delta A} $,
     (-\frac{\pl^{2}}{\pl s^{2}}+\frac{\tilde{l}^{2}}{s^{2}})
     T_{l}^{-1}(s,r) \frac{\delta}{\delta u_{lm}(r)} ,
 \end{align*}
-    здесь мы сразу опустили перекрестные слагаемые между
-$ u $ и
-$ w $,
-    которые зануляются ввиду ортогональности VSH.
-    В последнем слагаемом действие
-$ T_{l}^{-1} $ на
+	where we have immediately dropped the cross terms of
+$ u $ and
+$ w $
+	which vanish due to orthogonality of the VSH.
+	In the last term the action of
+$ T_{l}^{-1} $ on
 $ T_{l} $
-    дает
-$ \delta $-функцию, в результате чего одно интегрирование снимается.
-    Тут стоит отметить, что появление коэффициента
+	produces a
+$ \delta $-function
+	which removes one integration.
+	It is worth noting here that the appearance of coefficient
 $ T_{l}^{-1}(r,s) $
-    при квадрате сопряженных ``импульсов'' (то есть в кинетической части
-    гамильтониана) является естественным,
-    если ``координатная'' переменная 
+	in the square of conjugate ``momenta''
+	({\it i.e.} in the kinetic part of the Hamiltonian) is quite natural
+	if the ``coordinate'' variable 
 $ u_{l}(r) $
-    измеряется скалярным произведением
+	is measured by scalar product
 (\ref{Tprod})
-    с операцией
+	involving operation
 $ T_{l} $.
 
-    Суммируя преобразованные кинетическую и потенциальную части
-    получим следующее выражение для гамильтониана
+	Adding up the kinetic and potential parts we find the following
+	expression for Hamiltonian
 (\ref{qH0})
-    в новых переменных
+	in terms of the new variables,
 \begin{align*}
     \HH_{0} =& \sum_{l,m} \bigl( -\int_{0}^{\infty} dr
 	\frac{\delta}{\delta w_{lm}(r)} \frac{\delta}{\delta w_{lm}(r)}
@@ -1089,13 +1090,13 @@ $ T_{l} $.
 	\frac{\delta}{\delta u_{lm}(r)}
 	    + \langle u_{lm}, \check{T}_{l} u_{lm}\rangle_{l} \bigr).
 \end{align*}
-    Как и следовало ожидать, переменные
+	As was expected, variables
 $ w_{lm} $, 
 $ u_{lm} $
-    разделяются при всех
-$ l $ и $ m $,
-    а вакуумные состояния и возбуждения такого гамильтониана можно искать
-    в виде произведений состояний гамильтонианов
+	separate for all
+$ l $ and $ m $,
+	while the vacuum states and excitations of this Hamiltonian
+	can be sought as products of states of Hamiltonians
 \begin{equation}
 \label{Hlm}
     \HH_{lm} = -\iint_{0}^{\infty} dr dr'
@@ -1103,22 +1104,21 @@ $ l $ и $ m $,
 	\frac{\delta}{\delta u_{lm}(r)}
 	+ \langle u_{lm}, \check{T}_{l}u_{lm}\rangle_{l}
 \end{equation}
-    и
+	and
 \begin{equation*}
     \HH_{lm}' = -\int_{0}^{\infty} dr
 	\frac{\delta}{\delta w_{lm}(r)} \frac{\delta}{\delta w_{lm}(r)}
 	    + (w_{lm},\check{T}_{l} w_{lm}) .
 \end{equation*}
-    Гамильтонианы
+	Hamiltonians
 $ \HH_{lm}' $
-    представляют из себя операторы, которые получаются при
-    переходе к сферическим координатам и разделении переменных для
-    свободного скалярного поля при
+	are operators found after switching to spherical coordinates
+	and separating the variables {\it in a Hamiltonian for / starting from ?} a free scalar field {\it with?}
 $ l \geq 1 $.
-    Их собственные векторы, по-видимому определены однозначно,
-    поэтому мы не будем на них останавливаться и
-    далее сосредоточимся только на операторах
-$ \HH_{lm} $.
+	Their eigenvectors are evidently defined unambiguously,
+	and so we do not consider them in detail,
+	paying close attention to operators
+$ \HH_{lm} $ instead.
 
 \subsection{Расширения квадратичной формы оператора
 $ \check{T}_{1} $}
