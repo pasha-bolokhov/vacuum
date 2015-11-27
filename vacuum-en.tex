@@ -1385,6 +1385,13 @@ $ \kappa < 0 $
 
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                                      %
+%                                                                                      %
+%      E I G E N S T A T E S   O F   T H E   Q U A N T U M   H A M I L T O N I A N     %
+%                                                                                      %
+%                                                                                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Eigenstates of the quantum Hamiltonian of a free transverse field}
 {\it в место!!!}
 	The eigenstates of quantum Hamiltonian
@@ -1415,8 +1422,8 @@ $ p_{l,\lambda}(r) $
     p_{l,\lambda}(r) = \frac{2r^{l}}{\sqrt{2\pi}\lambda^{l+1}}
 	\bigl(\frac{d}{dr}\frac{1}{r}\bigr)^{l} \sin \lambda r .
 \end{equation*}
-    Соответствующие операторы рождения и уничтожения, а также
-    вакуумные состояния выглядят следующим образом
+	The corresponding creation and annihilation operators as well as the
+	vacuum states look as follows,
 \begin{gather*}
     \hat{b}_{lm}(\lambda) = \lambda \hat{u}_{lm}(\lambda)
 	- \frac{\delta}{\delta \hat{u}_{lm}(\lambda)} ,\quad
@@ -1431,42 +1438,44 @@ $ p_{l,\lambda}(r) $
     \hat{\phi}'_{0}(\hat{w}_{lm}) = \exp\{-\frac{1}{2}
 	\int_{0}^{\infty} \hat{w}_{lm}^{2}(\lambda) \lambda \,d\lambda \} .
 \end{gather*}
-    Диагонализация гамильтониана
+	Diagonalization of Hamiltonian
 $ \HH_{1m}^{\kappa} $
-    с помощью преобразования
+	via the transformation
 \begin{equation*}
     \hat{u}_{1m}(\lambda) = \int_{0}^{\infty} p_{1,\lambda}^{\kappa}(r)
 	T_{1} u_{1m}(r)\,dr, 
 \end{equation*}
-    была описана в предыдущей части. Здесь стоит отметить, что в сферически
-    несимметричном случае коэффициенты
+	has been described in the last {\it(sub?)}section.
+	It is worth to note here that in a spherically non-symmetric case
+	coefficients
 $ \kappa $
-    могут быть разными для компонент, соответствующим разным значениям
+	may be different for components corresponding to different values
 $ m $
-    проекции момента вращения на третью ось координат.
+	of the third component of the angular momentum
+	{\it alt: of the projection of the angular momentum onto the third coordinate axis}.
 
-    В результате, в переменных
+	The results in terms of variables
 $ \hat{u}_{lm} $,
 $ \hat{w}_{lm} $
-    получаем гамильтониан
+	we find the Hamiltonian
 \begin{equation*}
     \hat{\HH} = \sum_{-1\leq m\leq 1} \hat{\HH}_{1m}^{\kappa}
 	+ \sum_{2\leq l, |m|\leq l} \hat{\HH}_{lm}
 	+ \sum_{1\leq l, |m|\leq l} \hat{\HH}'_{lm} ,
 \end{equation*}
-    вакуумное состояние
+	and the vacuum state
 \begin{equation*}
     \Phi_{0}^{\kappa} = \prod_{-1\leq m \leq 1} \phi_{1m}(\hat{u}_{1m}) \times
     \prod_{2\leq l, |m|\leq l} \phi_{lm}(\hat{u}_{lm}) \times
 	\prod_{l,m} \phi'_{lm}(\hat{w}_{lm}) ,
 \end{equation*}
-    а
-$ n $-частичные состояния получаются из формулы
-(\ref{hatphi})
-    с помощью замены оператора рождения
-$ \hat{b}(\lambda) $ на
+	while the
+$ n $-particle states are obtained from
+Eq.~(\ref{hatphi})
+	by replacing creation operator
+$ \hat{b}(\lambda) $ with an operator
 $ c(\lambda) $,
-    который может принимать любое из значений
+	which can take either of the values
 $ \hat{b}_{lm}(\lambda) $, $ \hat{b}'_{lm}(\lambda) $
 \begin{equation*}
     \hat{\Phi}_{\sigma_{n}}(\hat{u}) = \iint
