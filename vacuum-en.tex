@@ -4,7 +4,7 @@
 
 \usepackage{amsmath,amssymb}
 \usepackage[mathscr]{eucal}
-\usepackage[notref]{showkeys}
+%\usepackage[notref]{showkeys}
 
 \newcommand{\pl}{\partial}
 \newcommand{\ol}{\overline}
@@ -34,16 +34,22 @@ Quantum Hamiltonian Eigenstates\\[2mm]
 for a Free Transverse Field
 }\\
 \vspace{0.3cm}
-T.~A.~Bolokhov
+T.~A.~Bolokhov\\
+\vspace{0.3cm}
+{\it St.\,Petersburg Department of V.\,A.\,Steklov Mathematical Institute\\
+         Russian Academy of Sciences\\
+         27 Fontanka, St.\,Petersburg, Russia 191023}
 \end{center}
 
 \begin{abstract}
-	We present a method for construction of an alternative set of states
-	which satisfy the eigenstate functional equations for a quantum Hamiltonian operator
-	of a free transverse field within the framework of the second quantization.
-	Our recipe is based upon extensions of the quadratic form
-	of the transverse Laplace operator which are used as a source of basis functions
-	with a singularity at an isolated point in the three-dimensional space.
+We demonstrate that quantum Hamiltonian operator for a free transverse field
+within the framework of the second quantization reveals an alternative set of
+states satisfying the eigenstate functional equations.
+The construction is based upon extensions of the quadratic form of the
+transverse Laplace operator which are used as a source of spherical basis
+functions with singularity at the origin.
+This basis then naturally takes place of the one of plane or spherical waves
+in the process of Fourrier or spherical variable separation.
 \end{abstract}
 
 
@@ -57,29 +63,31 @@ T.~A.~Bolokhov
 \section*{Introduction}
 	The second quantization approach
 \cite{Dirac}, \cite{Becchi}
-	has been the reference framework for constructing the quantum field theory
+	has been the framework for constructing the quantum field theory
 	since the time of its inception in the first half of the 20th century.
 	Later in the development, for the purpose of practical calculations
 	of the scattering matrix elements, a wide recognition was given
 	to the technique of Feynman's diagrams,
         which is based on the Lagrangian formulation of the classical theory.
-	Unlike this latter technique, one of the advantages of the second (canonical) quantization
-	is that it provides a description of the quantum Hamiltonian operator.
-	In a correctly defined quantum system the latter operator must be
-	self-adjoint with respect to some Hilbert space.
-	The well-known finite-dimensional examples 
+	Unlike this latter technique, one of the advantages of the second
+	(canonical) quantization is that it provides a description in terms
+    of the quantum Hamiltonian operator.
+	In a correctly defined quantum system the latter object must be
+	a self-adjoint operator in Hilbert space.
+	The finite-dimensional examples 
 \cite{BF},
 \cite{Jackiw}
 	show that upon renormalization and the removal of singularities
-	the Hamiltonian nominee may well be a symmetric but still not a self-adjoint operator
-	of a free particle on a restricted space of states.
-	Such an candidate can be extended (completed) to a self-adjoint operator,
-	however this procedure is ambiguous as it requires an introduction of an extension parameter
-	(the dimensional transmutation phenomenon
+	the Hamiltonian nominee may well be a symmetric but still not
+	a self-adjoint operator, which represents
+    a free particle on a restricted space of states.
+	Such a candidate can be extended to a self-adjoint operator,
+    however this procedure is ambiguous as it requires introduction
+    of an extension parameter (the dimensional transmutation phenomenon as of
 \cite{Jackiw},
 \cite{LFres}).
-	A similar effect can seemingly be observed in the cases of systems of infinite number
-	of harmonic oscillators.
+    A similar effect is seemingly observed in the systems of infinite number
+    of harmonic oscillators.
 	We shall argue that the quadratic part of the quantum Hamiltonian of a free transverse vector field
 \begin{gather*}
     \HH_{0} = \int_{\RR^{3}} \bigl(-\frac{\delta}{\delta A_{k}(\vec{x})}
@@ -88,18 +96,21 @@ T.~A.~Bolokhov
     \partial_{k} A_{k} = 0,\quad
     \partial_{k} P_{kj} =0, \quad P^{2}=P, \quad P_{kj} = P_{jk},
 \end{gather*}
-	which appears, for example, in electrodynamics or as a result of renormalization
-	of a gauge theory, is a limiting case of a self-adjoint extension of a certain
-	symmetric operator defined on a restricted space of states.
-	At the same time, generic self-adjoint extensions turn out to be dependent
-	on an extension parameter and for that reason do not possess scale invariance.
+    which appears, for example, in electrodynamics or as a result of
+    renormalization of a gauge theory, is a limiting case of self-adjoint
+    extension of some symmetric operator defined on a restricted set
+    of states.
+    At the same time, self-adjoint extensions of the generic position
+    turn out to be dependent on an extension parameter and for that
+    reason do not possess scale invariance.
 
-	Due to the lack of adequate means of defining a scalar product on the space of functionals
-	which describe states of the stationary picture of the quantum field theory
-	we shall not make strict statements about the self-adjointness of operators.
-	Instead, we shall provide a sketch of the vacuum state and its excitations for such operators (the Fock space
-\cite{Fock}).
-	These states will satisfy the equations for ``eigenstate'' functionals and
+    Due to the lack of adequate definition of a scalar product on the space
+    of functionals, which describe states of the stationary picture of the
+    quantum field theory. we shall not make strict statements about the
+    self-adjointness or symmetricity.
+    Instead, we shall provide a sketch for the new vacuum state and its
+    excitations (the Fock space).
+    These states satisfy the equations for ``eigenstate'' functionals and
 	form a hierarchy associated with creation and annihilation of particles.
 	It is natural to demand that these equations match
 	the functional equations
@@ -108,32 +119,25 @@ T.~A.~Bolokhov
 \end{equation*}
 	for eigenstates of Hamiltonian
 $ \HH_{0} $,
-	but at the same time they can be defined on a set of functionals
-	which satisfy different conditions in the vicinity of the ``boundary'' values.
-	For such boundary points in the configuration space
-	in the vicinity of which the boundary conditions of the new functional space are set,
-	one can take field configurations with singularities behaving as
+	but at the same time they could be defined on a set of functionals
+	which satisfy different conditions in the vicinity of the ``boundary''
+    functions.
+	For such boundary points in the configuration space,
+	where the boundary conditions of the new functional space are set,
+	one can take functions with singularities behaving as
 \begin{equation}
 \label{Asing}
-    \vec{A}(x) \sim \frac{\vec{A}_{0}}{|x|}, \quad |x| \to 0.
+    \vec{A}(x) \sim \frac{\vec{A}_{0}}{|x|}, \quad |x| \to 0 ,
+	\quad \vec{x} \in \RR^{3} .
 \end{equation}
-	The self-adjoint extensions of the theory, therefore, will depend on a
-	certain preferred (or {\it chosen})  point in the three-dimensional space.
+	The possible self-adjoint extensions of the theory, therefore,
+    will depend on a
+	certain preferred point in the three-dimensional space.
 	As interactions or self-interactions are ``turned on'',
-	such extensions of the Hamiltonian and the related states will most likely
-	turn out to be unstable.
+	such extensions of the Hamiltonian and the related states will most
+	likely turn out to be unstable.
 	They, however, may still contribute to the scattering matrix as
-	intermediate states for particles interacting via a transverse field.
-
-	For the sake of brevity, we introduce the following notations for the
-	scalar and vector products
-\begin{equation*}
-    \vec{A}\cdot\vec{B} = A_{j}B_{j} ,\quad
-	(\vec{A}\times\vec{B})_{l} = \epsilon_{ljk} A_{j} B_{k} ,
-\end{equation*}
-	and we always assume summation in the repeated indices.
-
-
+	intermediate states for particles interacting via the transverse field.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -145,13 +149,15 @@ $ \HH_{0} $,
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Finite-dimensional examples with
          singular interactions}
-	In this part we describe finite-dimensional examples from quantum mechanics
+%	As the beginning we are going to describe
+    We start with the finite-dimensional examples
+    from quantum mechanics
 	in order to make an attempt to generalize some of their properties
 	to the infinite-dimensional case.
 	Let
 \begin{equation*}
     H_{\ve} = \Delta + \ve \delta(x)
-	= -\frac{\partial^{2}}{\partial x_{k}^{2}}
+	= -\sum_{k} \frac{\partial^{2}}{\partial x_{k}^{2}}
 	    + \ve \delta(x)
 \end{equation*}
 	be the Hamiltonian of a particle existing in the two- or three-dimensional space
@@ -160,14 +166,14 @@ $ \delta $-potential centered at the origin.
 	Hamiltonian
 $ H_{\ve} $
 	does not have a correct definition in terms of a closed operator
-	in the Hilbert space.
+	in Hilbert space.
 	One can, however, consider the action of
 $ H_{\ve} $
 	on the set of smooth functions falling off towards the origin along with their derivatives.
-	This action corresponds to a symmetric operator
+	This action corresponds to symmetric operator
 \begin{equation*}
     H: \;\; H f(\vec{x}) = \Delta f(\vec{x}) =
-	-\frac{\partial^{2}}{\partial x_{k}^{2}} f(\vec{x}) ,
+	-\sum_{k} \frac{\partial^{2}}{\partial x_{k}^{2}} f(\vec{x}) ,
 \end{equation*}
 	which, evidently, does not account for potential
 $ \ve \delta(\vec{x}) $.
@@ -231,46 +237,48 @@ $ \Delta $
     T_{l}^{-1}(r,s) = \frac{1}{2l+1}\bigl(\frac{s^{l+1}}{r^{l}} \theta(r-s)
 	+ \frac{r^{l+1}}{s^{l}}\theta(s-r)\bigr).
 \end{gather}
-	Note that because of orthonormality of the sets of spherical
-	harmonics, the scalar product
+	Note that due to the orthonormality of the sets of spherical
+	harmonics, each of the scalar products
 \begin{equation*}
     (f,g)_{\RR^{2}} = \int_{\RR^{2}} \ol{f(\vec{x})} g(\vec{x}) \,d^{2}x ,
 \quad
     (f,g)_{\RR^{3}} = \int_{\RR^{3}} \ol{f(\vec{x})} g(\vec{x}) \,d^{3}x ,
 \end{equation*}
-	descends to the coefficient functions
+	transfers to the coefficient functions
 $ u(r) $
-	as a scalar product on the half-axis
+	as the plain scalar product on the half-axis
 \begin{equation}
 \label{plainprod}
     (u,v) = \int_{0}^{\infty} \ol{u(r)} v(r) \, dr .
 \end{equation}
 	Operators
 $ T_{l-\frac{1}{2}} $ and
-$ T_{l} $
+$ T_{l} $,
 	defined on the set of smooth functions vanishing at the origin
 	along with their derivatives,
-	are essentially self-adjoint ?({\it with respect to})? scalar product
+	are essentially self-adjoint with respect to the scalar product
 (\ref{plainprod})
 	at
 $ l \geq 1 $.
 	At the same time, operators
 $ T_{-\frac{1}{2}} $,
 $ T_{0} $
-	acting on the latter set are symmetric operators with the deficiency indices
+    acting on the latter set are symmetric operators with deficiency indices
 $ (1,1) $.
 	Their self-adjoint extensions
 $ T_{-\frac{1}{2}}^{\kappa} $,
 $ T_{0}^{\kappa} $
 	have continuous spectrum eigenfunctions that look like
-\begin{gather*}
-    u_{2\lambda}(r) = \sqrt{\lambda r} (\alpha_{2\lambda} J_{0}(\lambda r)
-	+ \beta_{2\lambda} Y_{0}(\lambda r)) , \\
-    u_{3\lambda}(r) = \alpha_{3\lambda} \sin \lambda r
-	+ \beta_{3\lambda} \cos\lambda r , \\
-    \alpha_{n\lambda} = \alpha_{n}(\lambda,\kappa), \quad
-    \beta_{n\lambda} = \beta_{n}(\lambda,\kappa),
-\end{gather*}
+\begin{align*}
+    v_{\lambda}(r) &= \sqrt{\lambda r} (\alpha_{v\lambda} J_{0}(\lambda r)
+	+ \beta_{v\lambda} Y_{0}(\lambda r)) , 
+    \quad T_{-\frac{1}{2}}^{\kappa} v_{\lambda} = \lambda^{2} v_{\lambda}\\
+    u_{\lambda}(r) &= \alpha_{u\lambda} \sin \lambda r
+	+ \beta_{u\lambda} \cos\lambda r , 
+    \quad T_{0}^{\kappa} u_{\lambda} = \lambda^{2} u_{\lambda}\\
+    &\alpha_{\{u,v\}\lambda} = \alpha_{\{u,v\}}(\lambda,\kappa), \quad
+    \beta_{\{u,v\}\lambda} = \beta_{\{u,v\}}(\lambda,\kappa),
+\end{align*}
 	along with, possibly, some eigenfunctions of the discrete spectrum.
 	The actions of extensions
 $ T_{-\frac{1}{2}}^{\kappa} $,
@@ -304,7 +312,7 @@ $ H_{3}^{\kappa} $
 $ H_{2}^{\kappa} $,
 $ H_{3}^{\kappa} $,
 	still matches the sum of squares of the second derivatives
-$ \Delta $ in the corresponding space
+$ \Delta $ on the corresponding set of functions on
 $ \RR^{2} $ or
 $ \RR^{3} $.
 
@@ -323,10 +331,13 @@ $ H_{3}^{\kappa} $
 $ H_{\ve} $
 	at
 $ \ve \to 0 $.
-	As for the presence, in the domain, of singular functions with asymptotics
+    Meanwhile the singular functions with asymptotics
 (\ref{fas2}),
 (\ref{fas3})
-	at the origin, it can be traced to the
+	at the origin, emerging in the domains of
+$ H_{2}^{\kappa} $,
+$ H_{3}^{\kappa} $,
+    represent the remnant of the
 	renormalized singular interaction
 $ \ve \delta(\vec{x}) $.
 	In the case of a particle in two-dimensional space one
@@ -335,37 +346,39 @@ $ \ve \delta(\vec{x}) $.
 $ \ve $
 	is replaced with a dimensional parameter
 $ \kappa $
-	during renormalization.
+	during renormalization
 \cite{LFres}.
 
-
-	As another example one can consider operators of the type
+	As another example one can consider two- and three-dimensional
+    operators of the type
 \begin{equation}
 \label{secondex}
     \Delta + \frac{\ve}{|x|^{2}} =
 	-\frac{\partial^{2}}{\partial x_{k}^{2}} + \frac{\ve}{|x|^{2}},
 \end{equation}
 	with
-$ \ve $ a dimensionless parameter.
+$ \ve $ being a dimensionless parameter.
 	Such operators are closed symmetric operators at finite
 $ \ve $
 	in some vicinity of zero (in two-dimensional case
 $ \ve $ has to be positive).
-	When building a function satisfying the equations for eigenvalues
-	one observes that the increase of the divergence of the ``eigenfunction'' by
+	When drawing a function satisfying the eigenstate equation
+	one observes that the increase of the divergence by
 $ |x|^{-2} $
-	originating from the action of the potential cancels the
+	originating from the action of the potential can cancel the
 	divergence from the action of the Laplacian.
 	Therefore, operator
 (\ref{secondex})
 	has an alternative basis of locally square-integrable
 	``eigenfunctions'' behaving as
-$ |x|^{-\eta} $
+$ |x|^{\eta} $
 	near the origin
-($ \eta = \sqrt{\ve} $ in two dimensions and
-$ \eta = \frac{1}{2}(1+\sqrt{1+4\ve}) $ in three dimensions),
+($ \eta = -\sqrt{\ve} $ in two dimensions and
+$ \eta = -\frac{1}{2}(1+\sqrt{1+4\ve}) $ in three dimensions),
 	that is, it allows self-adjoint extensions
-	(this by no means is a mathematically strict explanation).
+	(this by no means is a mathematically strict explanation
+    of the Frobenius method
+\cite{Frobenius}).
 	One can show that in the limit
 $ \ve \to 0 $
 	these extensions continuously turn into the corresponding operators
@@ -385,25 +398,35 @@ $ H_{3}^{\kappa} $.
 \section{Three-dimensional transverse field theory}
 	From the perspective of theory of operators in Hilbert space,
 	the example of the last section shows that the restriction of the
-	domain of operator
+	domain of Laplacian
 $ \Delta $
-	to the set of smooth functions vanishing at the origin along with their derivatives
+	to the set of smooth functions vanishing at the origin
 	leads to a symmetric operator and an ambiguity in the definition
 	of the Hamiltonian of the system.
-	At the same time, the interaction which disappears during renormalization
-	only serves as a catalyst for that ambiguity by choosing a preferred point in the space.
-	In this work we shall try to generalize the lessons of the finite-dimensional example
-	to the case of field theory.
-	We cannot really speak of self-adjointness of quantum-mechanical operators
-	in the case of a configurational space with an infinite number of dimensions
-	as in this case we do not have a possibility to define the scalar product
-	on a wide enough class of functionals.
-	For this reason we shall limit our consideration to the ambiguity
-	in the construction of eigenvectors of such systems after renormalization,
-	and shall provide an instructive example of an alternative set
-	of vacuum and excited states.
+    At the same time, the interaction, which disappears during
+    renormalization,
+    only serves as a catalyst for that ambiguity by selecting a preferred
+    point in the space.
+    In this work we shall try to generalize the experience of the
+    finite-dimensional example to the case of field theory.
+    We cannot really speak of self-adjointness
+    in the case of an inifinite dimensional configurational space
+    as long as we do not have a possibility to define the scalar product
+    on a wide enough class of functionals.
+    For this reason we shall limit ourselves to the description
+    of eigenvectors of such systems after renormalization,
+    and shall provide an instructive example of an alternative set
+    of vacuum state and its excitations.
 
-	Consider the following Hamiltonian function
+    For the sake of brevity, further we shall use
+    the following notations for the scalar and vector products
+\begin{equation*}
+    \vec{A}\cdot\vec{B} = A_{j}B_{j} ,\quad
+	(\vec{A}\times\vec{B})_{l} = \epsilon_{ljk} A_{j} B_{k} ,
+\end{equation*}
+	and we shall always assume summation in the repeated indices.
+	Consider the following Hamiltonian functional of the classical
+    mechanics
 \begin{equation}
 \label{qH3}
     H_{\ve}
@@ -413,14 +436,15 @@ $ \Delta $
 \end{equation}
     where
 $ A_{k}^{a}(x) $,
-$ E_{k}^{a}(x) $ are the fields of ({\it ?generalized?}) coordinates and their conjugate momenta
-	in the three-dimensional space which satisfy the transversality conditions
+$ E_{k}^{a}(x) $ are the fields of generalized coordinates and their
+    conjugate momenta in the three-dimensional space, which satisfy
+    the transversality conditions
 \begin{equation}
 \label{transAE}
     \pl_{k} A_{k}^{a} = 0, \quad 
     \pl_{k} E_{k}^{a} = 0 .
 \end{equation}
-	Here we have denoted as 
+	We have denoted as 
 $ \ve (A^{3}+\ldots) $
 	the homogeneous terms of dimension
 $ [x]^{-4} $
@@ -428,7 +452,7 @@ $ [x]^{-4} $
 $ A_{k}^{a} $,
 	as
 $ P_{kj}^{\ve} $ --- the projector from the transverse
-	to the covariant-transverse field projections,
+	to the covariant-transverse field sets,
 \begin{equation*}
     P_{kj}^{\ve}
 	= \delta_{kj} - \pl_{k} M^{-1} (\pl_{j}-\ve A_{j}),
@@ -445,19 +469,21 @@ $ a $
 	The action of the covariant derivative (and of all objects that contain it)
 	may be non-trivial in this index
 \begin{equation*}
-    (\pl_{k}-A_{k})^{ab} = \pl_{k} \delta^{ab} - A_{k}^{c} t^{abc} .
+    (\pl_{k}-\ve A_{k})^{ab} B^{b} = \pl_{k} B^{a}
+	- \ve A_{k}^{c} t^{abc} B^{b} .
 \end{equation*}
-	We shall be only considering the quadratic terms, for which the non-triviality
-	of action in this index reduces to mere summation.
-	Provided that the matrices 
+	We shall be only considering the quadratic terms, for which the
+    non-triviality in this index reduces to mere summation,
+	provided that the matrices 
 $ t^{abc} $
 	are orthogonal for different
-$ c $,
-	the components corresponding to different values of the upper index of field
+$ c $.
+    This way the components corresponding to different values of the upper
+    index of field
 $ A_{k}^{a}(x) $
-	separate.
+    will separate.
 
-	An actual physical example of a Hamiltonian of type
+	An actual physical example of the Hamiltonian of type
 (\ref{qH3})
 	is given in the third chapter of book
 \cite{FS}.
@@ -477,26 +503,28 @@ $ E_{k}^{a} $
 	is placed a constraint (2.41) upon,
 \begin{equation}
 \label{conn}
-    (\partial_{k} - \ve A_{k}) E_{k} = 0 .
+    (\partial_{k} - \ve A_{k})^{ab} E_{k}^{b} = 0 .
 \end{equation}
 	After splitting momentum
-$ \vec{E}^{a}(\vec{x}) $
+$ \vec{E}(\vec{x}) $
 	into its longitudinal and transverse components
 \begin{equation*}
     E_{k} = E_{k}^{L} + E_{k}^{T} ,\quad \partial_{k} E_{k}^{T} = 0,
+	\quad E_{k}^{L} = \partial_{k} \xi(\vec{x})
 \end{equation*}
 	we obtain from condition
 (\ref{conn})
 	that
 \begin{gather*}
-    E_{k}^{L} = - \partial_{k} M^{-1} (\partial_{l} -\ve A_{l}) E_{l}^{T},
+    \xi(\vec{x}) = -M^{-1} (\partial_{l} -\ve A_{l}) E_{l}^{T},
     \quad M = (\partial_{j} - \ve A_{j})\partial_{j} , \\
     E_{k} = \bigl(\delta_{kl}
 	- \partial_{k} M^{-1} (\partial_{l} -\ve A_{l})\bigr) E_{l}^{T},
 \end{gather*}
 	and the Hamiltonian density
 (\ref{hFS})
-	after integrating by parts is transformed to the form of 
+	after integrating by parts is transformed to the following
+    form of 
 Eq.~(\ref{qH3})
 \begin{align*}
     h =& \,\frac{1}{2} \bigl( (\delta_{kl}
@@ -506,12 +534,29 @@ Eq.~(\ref{qH3})
 	+\frac{1}{2} \ve^{2} ([A_{j},A_{k}]^{a})^{2} .
 \end{align*}
 
-	During the renormalization procedure
-$ \ve \to 0 $
-	and the higher order terms
-$ \ve (A^{3}+\ldots) $
-	in Hamiltonian
+    The quantum counterpart
+$ \HH_{\ve} $ of Hamiltonian
+$ H_{\ve} $
+    in a coordinate representation
+    acts on functionals
+$ \Phi(A_{j}(\vec{x})) $
+    by the expression
 (\ref{qH3})
+    with
+$ A_{j}(\vec{x}) $
+    changed to the operator multiplying by
+$ A_{j}(\vec{x}) $
+    and
+$ E_{j}(\vec{x}) $
+    changed to the variation
+$ \frac{\delta}{i\delta A_{j}(\vec{x})} $.
+    (We assume that Planck constant equals one and do not discuss
+    the ordering of the canonical pairs.)
+
+	During the renormalization procedure when
+$ \ve \to 0 $
+	the higher order terms
+$ \ve (A^{3}+\ldots) $
 	disappear, while projector
 $ P_{kj}^{\ve} $
 	turns into the orthogonal projector onto the transverse component
@@ -521,18 +566,66 @@ $ P_{kj}^{\ve} $
 	P_{kj} = \delta_{kj} - \pl_{k} \pl^{-2} \pl_{j} ,\quad
     P_{kj}^{T} = P_{kj} ,\quad P_{kn} P_{nj} = P_{kj} .
 \end{equation}
-	However, replacement of
-$ P_{kj}^{\ve} $ with $ P_{kj} $
-	in the renormalized quantum Hamiltonian does not occur without leaving a trace.
-        Classical Hamiltonian
-(\ref{qH3})
-	seems to have singularities via projector
+	However, in general there is a difference between the result
+$ \HH_{\text{ren}} $
+    of the renormalization of
+$ \HH_{\ve} $ at
+$ \ve\to 0 $
+    and the first term
+$ \HH_{0} $ in the expansion of
+$ \HH_{\ve} $
+    on
+$ \ve $
+    in the vicinity of zero
+\begin{equation}
+\label{Hexp}
+    \HH_{\ve} = \HH_{0} + \sum_{n\geq 1}
+	\frac{\partial^{n} \HH_{\ve}}{\partial\ve^{n}}\bigr|_{\ve =0}
+	\frac{\ve^{n}}{n!} .
+\end{equation}
+    Treatment of divergences in
+$ \HH_{\ve} $
+    requires introduction of regulariztion parameters,
+%    The physical reason for this is the dependence of coefficients
+%$ \frac{\partial^{n} \HH_{\ve}}{\partial\ve^{n}}\bigr|_{\ve =0} $
+%    on some regularization parameters,
+    which in turn are related with
+$ \ve $ (see the example in
+\cite{LFres}).
+    As a result some or every term in expansion
+(\ref{Hexp})
+    may become finite even at
+$ \ve = 0 $
+    and the renormalized Hamiltonian
+$ \HH_{\text{ren}} $
+    does not equal
+$ \HH_{0} $.
+    Further we propose that contribution of these finite terms is such that
+    it only forces
+$ \HH_{\text{ren}} $
+    to acquire an alternative set of eigenstates, while presuming the
+    action of
+$ \HH_{0} $.
+%    This is next-to-simplest sketch of what
+%$ \HH_{\text{ren}} $
+%    can be after the ??common?? renormalization (
+%see \cite{Renorm})
+%\begin{equation*}
+%    \HH_{\text{ren}} = \ve_{\text{ren}} \HH_{0} ,
+%	\quad \ve_{\text{ren}} \neq 1
+%\end{equation*}
+    We have already seen how this picture is realized in the finite-dimensional
+    examples in the previous section.
+
+    More specifically, the present proposal relates to the fact that    
+    Hamiltonian
+$ \HH_{\ve} $
+	might have singularities via projector
 $ P_{kj}^{\ve} $
-	when 
-$ A_{k}(x) $
-	locally behaves as
+    around the boundary functions,
+	which locally behave as
 $ |x|^{-1} $.
-	Higher order homogeneous terms have the same singularity.
+	Higher order homogeneous terms have singularities of the same kind.
 	In analogy to example
 (\ref{secondex}),
 	these two types of singularities can cancel each other,
@@ -541,11 +634,9 @@ $ |x|^{-1} $.
 	different spectral properties.
 
 	In order to see this better, let us consider the action
-	of the quantum Hamiltonian operator --- which can be obtained from
-	the classical function
-(\ref{qH3})
-	by taking
-$ \ve = 0 $ ---
+	of the quantum Hamiltonian operator
+$ \HH_{0} $ from
+(\ref{Hexp})
 	upon functionals
 $ \Phi(A) $,
 \begin{equation}
@@ -570,22 +661,26 @@ $ \Delta $,
 \label{QA}
 	&= \int_{\RR^{3}} A_{j}(x) \Delta A_{j}(x) d^{3}x .
 \end{align}
-
-	The vacuum state and
-$ n $-particle excitations of operator
+    The unnormalized vacuum state of operator
 $ \HH_{0} $
-	can then be constructed from the Gaussian functional
-\begin{gather}
+    can be constructed as the Gaussian functional
+\begin{equation}
 \label{Phi0}
-    \Phi_{0}(A) = \exp\{-\frac{1}{2}(A,P\Delta^{\frac{1}{2}}PA)\} ,\\
+    \Phi_{0}(A) = \exp\{-\frac{1}{2}(A,P\Delta^{\frac{1}{2}}PA)\} .
+\end{equation}
+    And then the
+$ n $-particle excitations (the Fock states
+\cite{Fock})
+    are
+\begin{equation*}
 \label{Phin}
     \Phi_{\sigma_{n}}(A) = \iint
     \sigma_{n}^{j_{1}\ldots j_{n}} (\vec{x}_{1},\ldots \vec{x}_{n})
 	b_{j_{1}}(\vec{x}_{1}) \ldots b_{j_{n}}(\vec{x_{n}})
     d^{3}x_{1} \ldots d^{3}x_{n} \Phi_{0}(A) ,
-\end{gather}
+\end{equation*}
 	where
-$ \sigma_{n} $ are some symmetric functions, and
+$ \sigma_{n} $ are some Bose-Einstein symmetric functions, and
 $ b_{j}(\vec{x}) $ are the creation operators from the corresponding pair
 \begin{equation*}
     b_{j}(\vec{x}) = P_{jk}\bigl(\frac{\delta}{\delta A_{k}(\vec{x})}
@@ -596,27 +691,28 @@ $ b_{j}(\vec{x}) $ are the creation operators from the corresponding pair
     	of creation and annihilation operators.
 	Here quite essential is the fact that projector
 $ P $
-	commutes with operator
+	commutes with
 $ \Delta $,
 	and hence, with an arbitrary function thereof ---
 	for example with 
-$ \Delta^{\frac{1}{2}} $.
+$ \Delta^{\frac{1}{2}} $
+($ \Delta $ should be defined as a self-adjoint operator).
 
-	Operator
+	Quantum operator
 $ \HH_{0} $
-	acts on functionals
-$ \Phi_{\sigma_{n}} $
-	non-diagonally, however, as is easy to see,
+	mixes the functionals
+$ \Phi_{\sigma_{n}} $,
+	however, as is easy to see, 
 	it leaves
 $ n $-particle subspaces invariant.
 	For further diagonalization it is necessary to pass
 	to the spectral representation of operator
 $ \Delta $,
-	which we shall do later(or {\it below?}) in the framework of a more general approach.
+	which we shall do below in the framework of a more general approach.
 	The main idea of that approach is
-	to build an alternative hierarchy of ``eigenstates'' via a method
+	to construct an alternative vacuum state via a method
 	which, in analogy to the second quantization, can be called
-	the method of secondary self-adjoint extensions.
+	the method of second self-adjoint extensions.
 
 
 
@@ -628,19 +724,22 @@ $ \Delta $,
 \subsection{Method of secondary self-adjoint extensions}
 	In the case when the quantum Hamiltonian has the form of 
 Eq.~(\ref{qH0}),
-	and the closed quadratic form
+	and the positive closed quadratic form
 $ Q(A) $
-	{\it admits?} non-trivial extensions,
-	there arises a natural way of constructing an alternative set of ``eigenstates''
-	of operator
+	admits non-trivial extensions,
+	there arises a natural way of constructing an alternative
+    set of ``eigenstates'' of operator
 $ \HH_{0} $.
-	A closed semi-bounded quadratic form
+    In general a closed semi-bounded quadratic form
 $ Q(A) $
-	may be defined by means of a symmetric or self-adjoint operator
+    may be defined by means of a closed operator
 $ S $
+    symmetric or self-adjoint
+    in scalar product
+$ (\cdot , \cdot ) $
 	via a natural formula
 \begin{equation*}
-    Q(A) = (A,SA) .
+    Q(A) = (A,SA) = (SA,A).
 \end{equation*}
 	Herein domain
 $ \DD_{S} $
@@ -651,18 +750,19 @@ $ \DD_{Q} $
 	of form
 $ Q $,
 	and the latter, generally, differs from the former quite significantly.
-	Symmetric operator
+    As long as
+$ Q(A) $ 
+    is semi-bounded, symmetric operator
 $ S $
-	allows self-adjoint extensions
+    allows self-adjoint extensions
 $ S_{\kappa} $
-	one of which -- an extension {\it in line with} (or {\it \`a la}, or {\it due to}) Friedrichs
-\cite{FStone} ---
+	one of which -- Friedrichs extension
+\cite{FStone} --
 	also defines form
 $ Q $,
-	while the rest of the extensions
+	while the rest of the extensions, provided they are semi-bounded,
 	define different quadratic forms
-$ Q_{\kappa} $, at least at finite deficiency indices of 
-$ S $
+$ Q_{\kappa} $,
 (for general material on quadratic forms see section VIII.6 of book
 \cite{RS1}).
 	These quadratic forms in certain cases (in fact, in the majority of simple examples)
@@ -699,7 +799,7 @@ $ \DD_{Q} $
 \end{equation}
 	for transverse vectors
 $ \vec{A}(\vec{x}) $
-	({\it? with respect to?}) in the scalar product
+	with respect to the scalar product
 \begin{equation*}
     (\vec{A},\vec{B})_{\RR^{3}} = \int_{\RR^{3}}
 	\ol{A_{j}(\vec{x})} B_{j}(\vec{x}) \,d^{3}x .
@@ -708,8 +808,8 @@ $ \vec{A}(\vec{x}) $
 $ B_{r} $ we have denoted a ball of radius
 $ r $
 	centered at any preferred point.
-	For all vector fields that are regular at that point (which we shall
-	further take to be the origin) the value of form
+    For all real-valued vector fields that are regular at that point
+    (which we shall further take to be the origin) the value of form
 $ Q_{\kappa} $
 	obviously equals the value of the form
 (\ref{QA})
@@ -734,18 +834,24 @@ $ r^{-1} $
 $ Q_{\kappa} $
 	coincide and do not depend on
 $ \kappa $.
-	We should also add that the coefficient of the dimensional parameter
+	We should also add that the coefficient at the dimensional parameter
 $ \kappa $
 	in equation
 (\ref{QkA})
 	can be taken arbitrary,
 	the value
 $ \frac{44}{27} $
-	has been chosen to conform to boundary conditions
+	has been chosen to conform to the boundary condition
 (\ref{cTb}),
-	which are introduced later.
+	which will be introduced later.
 
-	Next we note that we can demand that the basic relations for ``eigenfunctionals''
+	Next we note that
+	because singular fields of the form
+(\ref{Asing})
+	are inadmissible for higher order terms of the renormalized Hamiltonian
+(\ref{qH3}),
+    we can demand that the basic relations for
+    ``eigenfunctionals''
 $ \Phi_{\sigma_{n}}(A) $
 	of operator
 $ \HH_{0} $
@@ -754,37 +860,38 @@ $ \HH_{0} $
 \end{equation*}
 	be obeyed only on the domain of quadratic form
 $ Q(A) $.
-	This is because singular fields of the form
-(\ref{Asing})
-	are inadmissible for higher order terms of the renormalized Hamiltonian
-(\ref{qH3}).
 	But on that domain the above relations would also be obeyed
-	for a quantum operator with a form
+	for a quantum operator with form
 $ Q_{\kappa}(A) $
 	in place of form
 $ Q(A) $.
 	Form
 $ Q_{\kappa}(A) $,
 	after taking the square root of and substituting into a Gaussian integral
-	of the type of 
+	of the type 
 (\ref{Phi0}),
-	yields a radically different vacuum state and a different set of excitations,
-	all of which correspond to a different operator
+	yields a radically different vacuum state and a different set of
+	excitations corresponding to a different operator
 $ \HH_{\kappa} $.
-	One can conclude that operator
+	One can propose that operator
 $ \HH_{0} $
 	is a self-adjoint extension of some symmetric operator
-	which is defined on a set functionals rapidly vanishing near
-	boundary vectors with singularities of type
+	which is defined on a set of functionals rapidly vanishing near
+	boundary functions with singularities of type
 (\ref{Asing}).
 	This symmetric operator also admits other extensions 
 $ \HH_{\kappa} $
 	``the eigenstates'' for which are built by means of the quadratic form
 $ Q_{\kappa}(A) $.
-	For a more detailed study of such states let us switch to spherical coordinates
-	and single out the subspace of angular momentum
+    It should be said, that any other (possible) extension of the form
+(\ref{QA})
+    can be used instead of
+(\ref{QkA}),
+    we have just picked up the one that we know about.
+    For a more detailed study let us switch to spherical coordinates
+    and single out the subspace of angular momentum
 $ l=1 $
-	from the field variables.
+    from the field variables.
 
 
 
@@ -801,20 +908,21 @@ $ \YY_{lm}(\theta,\varphi) $
 \cite{VSH}:
 \begin{align}
 \label{VSH1}
-    \vec{\Upsilon}_{lm} = & \frac{\vec{x}}{r} \YY_{lm} , \quad
+    \vec{\Upsilon}_{lm}(\Omega) = & \frac{\vec{x}}{r} \YY_{lm} , \quad
         0 \leq l, \quad |m| \leq l, \\
-    \vec{\Psi}_{lm} = & \tilde{l}^{-1} r \vec{\pl} \YY_{lm} , \quad
+    \vec{\Psi}_{lm}(\Omega) = & \tilde{l}^{-1} r \vec{\pl} \YY_{lm} , \quad
         1 \leq l , \quad |m| \leq l, \\
 \label{VSH3}
-    \vec{\Phi}_{lm} = & \tilde{l}^{-1} (\vec{x} \times \vec{\pl}) \YY_{lm},
+    \vec{\Phi}_{lm}(\Omega)
+	= & \tilde{l}^{-1} (\vec{x} \times \vec{\pl}) \YY_{lm},
         \quad 1 \leq l , \quad |m| \leq l ,
 \end{align}
 	which are functions of angular variables
 $ \Omega = (\theta,\varphi) $.
-	Here
+	Here we denoted
 $ \tilde{l} = \sqrt{l(l+1)} $.
-	These functions are mutually orthogonal in terms of integration over the sphere
-	and normalized to one,
+	These functions are mutually orthogonal and normalized
+    in terms of integration over the sphere,
 \begin{align*}
     \int_{\Sph^{2}} \overline{\vec{\Upsilon}_{lm}(\Omega)}
         \vec{\Psi}_{l'm'}(\Omega) d\Omega & = 0 ,\quad
@@ -832,7 +940,7 @@ $ \tilde{l} = \sqrt{l(l+1)} $.
 	The vector spherical harmonics enable one to uniquely represent
 	a vector function
 $ \vec{A}(\vec{x}) $
-	in terms of the three sums
+	as three sums
 \begin{equation}
 \label{fext}
     \vec{A}(\vec{x}) =
@@ -845,10 +953,10 @@ $ l,m $
 	is always taken in the range
 $ 1 \leq l $, 
 $ |m| \leq l $
-	unless states otherwise explicitly.
+	unless stated otherwise explicitly.
 	For each component of expansion
 (\ref{fext}),
-	when acted upon with operator
+	when acted upon with Laplacian
 $ \Delta $,
 	the following separation of variable takes place
 \begin{equation*}
@@ -903,10 +1011,6 @@ $ w_{lm}(r) $
     + \frac{u_{lm}}{r^{2}} \vec{\pl}\cdot \frac{\vec{x}}{r} \bigr) 
     + \tilde{l}^{-1} u'_{lm} \vec{\pl}\cdot\vec{\pl} \YY_{lm} = 0 .
 \end{align}
-	For now we are assuming that functions
-$ u_{lm}(r) $,
-$ w_{lm}(r) $
-	are smooth enough and fall off rapidly towards the origin.
 
 	The action of the quadratic form of Laplace operator on a transverse field
 $ \vec{A}(\vec{x}) $
@@ -916,7 +1020,8 @@ $ w_{lm}(r) $
 	takes the following form (see the corresponding equations in
 \cite{Lapl})
 \begin{equation*}
-    \int_{\RR^{3}}\vec{A}(\vec{x})\cdot \Delta \vec{A}(\vec{x}) d^{3}x
+        Q(A) = \int_{\RR^{3}}
+        \bigl(\frac{\partial A_{k}}{\partial x_{j}}\bigr)^{2} d^{3} x 
 	= \sum_{l,m}\langle u_{lm},\check{T}_{l}u_{lm}\rangle_{l}
 	    + \sum_{l,m}(w_{lm},\check{T}_{l}w_{lm}) ,
 \end{equation*}
@@ -937,8 +1042,11 @@ $ (\cdot,\cdot) $
 	have been defined in
 (\ref{Tl}) and
 (\ref{plainprod}).
-	A surprising fact, significantly reducing calculations, is that
-	for smooth functions vanishing at the origin,
+	For now we are assuming that functions
+$ u_{lm}(r) $,
+$ w_{lm}(r) $
+	are smooth enough and fall off rapidly towards the origin.
+	A surprising fact significantly simlifying calculations is that
 	product
 (\ref{angleprod})
 	can be defined as a sesquilinear form of operation
@@ -954,9 +1062,9 @@ $ (\cdot,\cdot) $
 	In order to avoid confusion between the differential operation
 $ T_{l} $
 	arising from the scalar product and the radial part of Laplace operator,
-	we will denote the latter as
+	we have denoted the latter as
 $ \check{T}_{l} $
-	from here on.
+	and will keep this notation later.
 
 	The kinetic term of Hamiltonian
 (\ref{qH0})
@@ -1110,10 +1218,11 @@ $ l $ and $ m $,
 	    + (w_{lm},\check{T}_{l} w_{lm}) .
 \end{equation*}
 	Hamiltonians
-$ \HH_{lm}' $
+$ \HH_{lm}' $,
+$ l \geq 1 $
 	are operators found after switching to spherical coordinates
-	and separating the variables {\it in a Hamiltonian for / starting from ?} a free scalar field {\it with?}
-$ l \geq 1 $.
+	and separating the variables in a Hamiltonian for
+	a free scalar field.
 	Their eigenvectors are evidently defined unambiguously,
 	and so we do not consider them in detail,
 	paying close attention to operators
@@ -1140,8 +1249,8 @@ $ (1,1) $.
 	Such operators have non-trivial self-adjoint extensions
 	that act as mixed expressions
 \begin{equation*}
-    \check{T}_{\kappa} u = T u - \frac{2}{r} u'(0)
-    = -\frac{d^{2}u}{dr^{2}} + \frac{2}{r^{2}} u -\frac{2}{r}u'(0) .
+    \check{T}_{\kappa} u(r) = T u(r) - \frac{2}{r} u'(0)
+    = -\frac{d^{2}u(r)}{dr^{2}} + \frac{2}{r^{2}} u(r) -\frac{2}{r}u'(0) .
 \end{equation*}
 	on the domains
 \begin{equation}
@@ -1156,19 +1265,21 @@ $ l=1 $
 $ \check{T}_{1\kappa} $
 	and differential operation
 $ T_{1} $
-	both here and in the following section.
+	both here and in the following subsection.
 	Operators
 $ \check{T}_{\kappa} $
-	have a simple continuous spectrum which occupies the non-negative half-axis,
-	and to which the following ``eigenfunctions'' (the kernel{\it\small s??} of the spectral transformation)
-	correspond
+have a single-valued continuous spectrum which occupies the non-negative
+    half-axis, and to which the following ``eigenfunctions'' (the kernel
+    of the spectral transformation) correspond
 \begin{equation*}
 \label{Tpl}
     p_{\lambda}(r) = p_{1,\lambda}^{\kappa}(r)
         = \frac{2r}{\sqrt{2\pi}\lambda^{2}} \frac{d}{dr}\frac{1}{r}
     (\cos(\zeta +\lambda r) - \cos\zeta) ,
 \end{equation*}
-	where
+	where the phase shift
+$ \zeta $
+    is defined by
 \begin{equation*}
     e^{2i\zeta} = \frac{\lambda - i\kappa}{\lambda + i\kappa}.
 \end{equation*}
@@ -1176,8 +1287,9 @@ $ \check{T}_{\kappa} $
 $ \kappa < 0 $
 	operator
 $ \check{T}_{\kappa} $
-	has a simple eigenvalue
+	has an eigenvalue
 $ -\kappa $
+    of multiplicity one
 	(the discrete spectrum) and an eigenfunction
 \begin{equation*}
     q(r) = q_{\kappa}(r)
@@ -1201,7 +1313,7 @@ $ \{p_{\lambda}, q \} $
 $ s $
 	of differential operation
 $ T_{s} $
-	emphasizes that the latter acts with respect to variable
+	emphasizes that the latter acts on the variable
 $ s $.
 	Operators
 $ \check{T}_{\kappa} $
@@ -1217,7 +1329,7 @@ $ \langle u, \check{T} u\rangle_{1} $
     \WW^{2}_{0} = \{u(r):\quad \langle u,u\rangle_{1} <\infty, \;
 	\langle u, \check{T}u\rangle_{1} < \infty, \; u(0)=u'(0) =0 \} ,
 \end{equation*}
-	which corresponds to singly differentiable fields
+	which corresponds to differentiable fields
 \begin{equation}
 \label{Atrns}
     \vec{A}(\vec{x}) =
@@ -1240,7 +1352,9 @@ $ \WW^{2}_{0} $
     \langle u, \check{T}_{\kappa} u\rangle_{1}= \langle u,
 	\check{T} u\rangle_{1} ,\quad u \in \WW^{2}_{0} .
 \end{equation*}
-	We shall not provide a symmetric {\it limiting?} expression for the extended
+	We shall not provide a symmetric limiting expression like
+(\ref{QkA})
+    for the extended
 	form, as we pass right on to the spectral expansion instead,
 \begin{equation*}
     \langle u, \check{T}_{\kappa} u\rangle_{1}
@@ -1260,7 +1374,10 @@ $ \langle u, \check{T} u\rangle_{1} $
 	is in fact a special case of form
 $ \langle u, \check{T}_{\kappa} u\rangle_{1} $
 	corresponding to
-$ \kappa = \infty $.
+$ \kappa = \infty $
+    ({\it i.e.} the form of Friedrichs or \emph{maximal} extension
+    of symmetric operator
+$ \check{T} $).
 	From the perspective of the spectral properties of these forms,
 	one can observe that the spherical Bessel function
 \begin{equation*}
@@ -1275,7 +1392,7 @@ $ p_{1,\lambda}^{\kappa} $
     p_{1,\lambda}(r)  
         = \lim_{\kappa\to\infty}
     \frac{2r}{\sqrt{2\pi}\lambda^{2}} \frac{d}{dr}\frac{1}{r}
-    (\cos(\zeta +\lambda r) - \cos\zeta) ,\quad \zeta\to -\frac{\pi}{2}.
+    (\cos(\zeta +\lambda r) - \cos\zeta) ,\quad \zeta(\kappa)\to -\frac{\pi}{2}.
 \end{equation*}
 
 
@@ -1283,7 +1400,7 @@ $ p_{1,\lambda}^{\kappa} $
 \subsection{Hamiltonian eigenstates at
 \boldmath{$ l=1 $}}
 	The spectral expansion that we have obtained in the previous subsection
-	now allows us to re-write the Gaussian functional
+	now allows us to write the Gaussian functional
 $ \phi_{0}^{\kappa}(u) $
 	for the extended quantum operator
 \begin{equation*}
@@ -1292,7 +1409,7 @@ $ \phi_{0}^{\kappa}(u) $
 	\frac{\delta}{\delta u(r)}
 	+ \langle u, \check{T}_{\kappa}u\rangle_{1}
 \end{equation*}
-	as an exponent of an integral operator
+	as the following exponent of an integral operator
 \begin{equation*}
     \phi_{0}^{\kappa}(u)
 	= \exp\{-\frac{1}{2} \iint Q_{\kappa}^{\frac{1}{2}}(r,s)
@@ -1382,13 +1499,6 @@ $ \kappa < 0 $
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                                                                                      %
-%                                                                                      %
-%      E I G E N S T A T E S   O F   T H E   Q U A N T U M   H A M I L T O N I A N     %
-%                                                                                      %
-%                                                                                      %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Eigenstates of the quantum Hamiltonian of a free transverse field}
 	The eigenstates of quantum Hamiltonian
 (\ref{qH0}),
@@ -1397,11 +1507,10 @@ $ Q(A) $
 	its extension 
 (\ref{QkA}) is involved,
 	are constructed as products of eigenstates of operators
-$ \HH_{lm}' $, 
-$ 1\leq l, |m| \leq l $
-$ \HH_{lm} $,
-$ 2\leq l, |m| \leq l $
-	and
+$ \HH_{lm}' $, with
+$ 1\leq l, |m| \leq l $,
+$ \HH_{lm} $ with
+$ 2\leq l, |m| \leq l $ and
 $ \HH_{1m}^{\kappa} $.
 	For diagonalization of the first two sets of operators one can exploit
 	the standard spectral transformation
@@ -1413,7 +1522,7 @@ $ \HH_{1m}^{\kappa} $.
 \end{equation*}
 	where
 $ p_{l,\lambda}(r) $
-	is a variety of spherical Bessel functions
+	is some kind of spherical Bessel functions
 \begin{equation*}
     p_{l,\lambda}(r) = \frac{2r^{l}}{\sqrt{2\pi}\lambda^{l+1}}
 	\bigl(\frac{d}{dr}\frac{1}{r}\bigr)^{l} \sin \lambda r .
@@ -1441,14 +1550,13 @@ $ \HH_{1m}^{\kappa} $
     \hat{u}_{1m}(\lambda) = \int_{0}^{\infty} p_{1,\lambda}^{\kappa}(r)
 	T_{1} u_{1m}(r)\,dr, 
 \end{equation*}
-	has been described in the last {\it(sub?)}section.
+	has been described in the previous subsection.
 	It is worth to note here that in a spherically non-symmetric case
 	coefficients
 $ \kappa $
 	may be different for components corresponding to different values
 $ m $
-	of the third component of the angular momentum
-	{\it alt: of the projection of the angular momentum onto the third coordinate axis}.
+	of the third component of the angular momentum.
 
 	In terms of variables
 $ \hat{u}_{lm} $,
@@ -1491,7 +1599,7 @@ $ \hat{b}_{lm}(\lambda) $, $ \hat{b}'_{lm}(\lambda) $
 %                                                                              %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusion and discussion}
-	We have constructed a system of sets of states ({\it\small maybe just ``a system of states''?})
+	We have constructed a system of states 
 	satisfying the eigenstate equations for a quantum Hamiltonian operator
 	of a free transverse field.
 	The resulting sets generally depend on a preferred point in space and
@@ -1499,7 +1607,7 @@ $ \hat{b}_{lm}(\lambda) $, $ \hat{b}'_{lm}(\lambda) $
 	Our construction has heavily relied upon the properties of extensions
 	of the quadratic form of Laplace operator which appears in the potential term
 	of the Hamiltonian.
-	These extensions can be written in an ``invariant'' form
+	These extensions can be written in an invariant form
 (\ref{QkA})
 	which, similar to the transversality condition, does not imply a transition
 	to spherical coordinates and using any preferred functional parametrization
@@ -1517,17 +1625,17 @@ $ \hat{b}_{lm}(\lambda) $, $ \hat{b}'_{lm}(\lambda) $
 \end{equation*}
 	--- would such a form satisfy the conditions of theorem VIII.15 of
 \cite{RS1},
-	does it have a corresponding self-adjoint operator, and if it does,
-	can a spectral representation be found for the latter ({\it\small a question mark?}).
+	does it have the corresponding self-adjoint operator, and if it does,
+	can a spectral representation be found for the latter?
 	A significant difficulty here can be residing in the closure of the
 	transversality condition.
 	For the case of a single preferred point we are able to just
-	write out a transverse spectral representation,
+	write out a spectral representation for the transverse functions,
 	which further enables us to discuss related physics,
 	while for the case of several preferred points there may be no
 	such representation at all.
 
-	Another important remark is that, seemingly, a representation
+	Another important remark is that, seemingly, representation
 	of a physical object (a field mediating an interaction) in terms of a vector function
 	on a three-dimensional space is not the right method of description of the problem.
 	While two functions with singularities at two different points may represent
@@ -1585,32 +1693,33 @@ L.~D.~Faddeev,
 Theor.\ Math.\ Phys.\  {\bf 148} (2006) 986
 [Teor.\ Mat.\ Fiz.\  {\bf 148} (2006) 133].
 
-\bibitem{Fock}
-V.~Fock, ``Konfigurationsraum und zweite Quantelung,''
-Z. Phys. {\bf 75} (1932), 622-647.
+\bibitem{Frobenius}
+    see {\it e.~g.} chapter 10.10 in
+    R.~D.~Richtmyer, \emph{Principles of Advanced Mathematical Physics, vol.1},
+    Springer-Verlag, New York Heildelberg Berlin, 1978.
 
 \bibitem{FS}
   L.~D.~Faddeev and A.~A.~Slavnov,
 \emph{Gauge Fields. Introduction To Quantum Theory},
 Front.\ Phys.\  {\bf 50} (1980) 1, [Front.\ Phys.\  {\bf 83} (1990) 1].
 
-\bibitem{Lapl} T.~A.~Bolokhov,
-``Extensions of the quadratic form of the transverse Laplace operator'',
-arXiv:1410.1487 [math.SP].
+\bibitem{Fock}
+V.~Fock, ``Konfigurationsraum und zweite Quantelung,''
+Z. Phys. {\bf 75} (1932), 622-647.
 
 \bibitem{FStone}
     K.~Friedrichs, ``Spektraltheorie halbbeschr\"ankter Operatoren,''
     Math. Ann. {\bf 109}, 1934, 465--487;\\
     M.~Stone, in \emph{Linear Transformations in Hilbert spaces and their
-    Applications in Analysis}, Amer. Math. Soc. Colloquim Publication {\bf 15},
+    Applications in Analysis}, Amer. Math. Soc. Colloquium Publication {\bf 15},
     Providence, R.I., 1932;\\
     or see theorem X.23 in \cite{RS2}.
 
-\bibitem{RS1}  M.~Reed, B.~Simon, \emph{Methods of Modern Mathematical
-Physics. 1. Functional Analysis}, Academic Press New York London, 1972.
-
 \bibitem{RS2} M.~Reed, B.~Simon, \emph{Methods of Modern Mathematical Physics.
 II: Fourier Analysis, Self-adjointness}, Academic Press, 1975.
+
+\bibitem{RS1}  M.~Reed, B.~Simon, \emph{Methods of Modern Mathematical
+Physics. 1. Functional Analysis}, Academic Press New York London, 1972.
 
 \bibitem{Inv} T.~A.~Bolokhov,
 ``Properties of the l=1 radial part of the Laplace operator in a special
@@ -1622,24 +1731,14 @@ scalar product'', arXiv:1510.07824 [math.SP].
     E.~L.~Hill, ``The Theory of Vector Spherical Harmonics'',
     Am. J. Phys. {\bf 22} (1954) 211.
 
-%\bibitem{Krein}
-%    M.~G.~Krein, ``The theory of self-adjoint extensions of semi-bounded
-%Hermitian transformations and its applications.'',
-%    Rec. Math. (Mat. Sbornik) N.S., {\bf 20} (62), 1947, 431--495;
-%    Rec. Math. (Mat. Sbornik) N.S., {\bf 21} (64), 1947, 365--404.
-
-%\bibitem{F}
-%    Faddeev, Clay
+\bibitem{Lapl} T.~A.~Bolokhov,
+``Extensions of the quadratic form of the transverse Laplace operator'',
+arXiv:1410.1487 [math.SP].
 
 %\bibitem{AK}
 %    S.~Albeverio, P.~Kurasov, \emph{Singular Perturbation of Differential
 %    Operators. Solvable Schr\"odinger type Operators},
 %    Cambridge University Press, 2000.
-
-%\bibitem{Richt}
-%    R.~D.~Richtmyer, \emph{Principles of Advanced Mathematical Physics, vol.1},
-%    Springer-Verlag, New York Heildelberg Berlin, 1978.
-    
 
 \end{thebibliography}
 
